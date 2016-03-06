@@ -115,7 +115,7 @@
 	top: 0;
 	left: 0;
 	opacity: 0;
-	color: #3f51b5;
+	color: #0096AC;
 	-webkit-transform: translate3d(0, 25%, 0);
 	transform: translate3d(0, 25%, 0);
 }
@@ -137,7 +137,7 @@
 	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 }
 .button--winona:hover {
-	border-color: #3f51b5;
+	border-color: #0096AC;
 	background-color: rgba(63, 81, 181, 0.1);
 }
 .button--winona.button--inverted:hover {
@@ -229,15 +229,15 @@
 }
 .button--wayra:hover {
 	color: #fff;
-	border-color: #3f51b5;
+	border-color: #0096AC;
 }
 .button--wayra.button--inverted:hover {
-	color: #3f51b5 !important;
+	color: #0096AC !important;
 	border-color: #fff;
 }
 .button--wayra:hover::before {
 	opacity: 1;
-	background-color: #3f51b5;
+	background-color: #0096AC;
 	-webkit-transform: rotate3d(0, 0, 1, 0deg);
 	transform: rotate3d(0, 0, 1, 0deg);
 	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
@@ -399,7 +399,7 @@
 	transform: scale3d(0.7, 0.7, 1);
 }
 .button--pipaluk:hover::after {
-	background-color: #3f51b5;
+	background-color: #0096AC;
 }
 .button--pipaluk.button--inverted:hover::after {
 	background-color: #fff;
@@ -503,7 +503,7 @@
 	-webkit-transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
 	transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
 	color: #ECEFF1;
-	background-color: #3f51b5;
+	background-color: #0096AC;
 	-webkit-animation: anim-moema-1 0.3s forwards;
 	animation: anim-moema-1 0.3s forwards;
 }
@@ -575,7 +575,7 @@
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
-	background: #3f51b5;
+	background: #0096AC;
 	-webkit-transform-origin: 100% 50%;
 	transform-origin: 100% 50%;
 	-webkit-transform: scale3d(1, 2, 1);
@@ -627,7 +627,7 @@
 	background: #7986cb;
 }
 .button--aylen::after {
-	background: #3f51b5;
+	background: #0096AC;
 }
 .button--aylen:hover {
 	color: #fff;
@@ -683,8 +683,8 @@
 	color: #7986cb;
 }
 .button--saqui.button--inverted:hover {
-	background-color: #3f51b5;
-	color: #3f51b5;
+	background-color: #0096AC;
+	color: #0096AC;
 }
 .button--saqui:hover::after {
 	-webkit-transform: rotate3d(0, 0, 1, 0deg);
@@ -709,7 +709,7 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	border: 2px solid #3f51b5;
+	border: 2px solid #0096AC;
 	z-index: -1;
 	border-radius: inherit;
 	opacity: 0;
@@ -725,7 +725,7 @@
 }
 .button--wapasha:hover {
 	background-color: #fff;
-	color: #3f51b5;
+	color: #0096AC;
 }
 .button--wapasha.button--inverted:hover {
 	background-color: #37474f;
@@ -776,7 +776,7 @@
 	transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
 }
 .button--nina:hover {
-	background-color: #3f51b5;
+	background-color: #0096AC;
 }
 .button--nina:hover::before {
 	opacity: 0;
@@ -846,7 +846,7 @@
 	padding: 1em 0;
 }
 .button--nanuk:hover {
-	background-color: #3f51b5;
+	background-color: #0096AC;
 }
 .button--nanuk:hover > span:nth-child(odd) {
 	-webkit-animation: anim-nanuk-1 0.5s forwards;
@@ -1070,7 +1070,7 @@
 	border-color: #7986cb;
 }
 .button--antiman.button--inverted-alt::before {
-	border-color: #3f51b5;
+	border-color: #0096AC;
 }
 .button--antiman::after {
 	background: #fff;
@@ -1079,13 +1079,13 @@
 	background: #7986cb;
 }
 .button--antiman.button--inverted-alt::after {
-	background: #3f51b5;
+	background: #0096AC;
 }
 .button--antiman.button--inverted:hover {
 	color: #7986cb;
 }
 .button--antiman.button--inverted-alt:hover {
-	color: #3f51b5;
+	color: #0096AC;
 }
 .button--antiman:hover::before {
 	opacity: 1;
@@ -1471,7 +1471,7 @@
 	transform: translate3d(0, 0, 0);
 }
 .button--shikoba:hover {
-	background: #3f51b5;
-	border-color: #3f51b5;
+	background: #0096AC;
+	border-color: #0096AC;
 	color: #fff;
 }

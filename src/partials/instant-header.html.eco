@@ -3,9 +3,13 @@
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2 white">
 				<h4><%=@supertitle or ''%></h4>
-				<h1><%=@title or ''%></h1>
+				<!-- <h1><%=@title or ''%></h1> -->
+				<img src="images/sensorium-logo.svg" alt="Sensorium 2016">
+				<br>
+				<br>
 				<h3><%=@subtitle or ''%></h3>
 				<h4><%=@subsubtitle or ''%></h4>
+				<br>
 				<% if @calltoaction: %>
 					<button class="centeredblock button button--wayra button--border-medium button--text-upper button--size-s button--text-thick button--inverted">Get Tickets</button>
 				<% end %>
