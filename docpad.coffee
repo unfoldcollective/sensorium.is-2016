@@ -23,7 +23,7 @@ module.exports =
       styles: [
         "/styles/bootstrap.css"
         # "/styles/style.css"
-        "/styles/font-awesome.min.css"
+        "/styles/font-awesome-min.css"
         "/styles/instant-style.css"
       ]
 
@@ -35,9 +35,9 @@ module.exports =
 
     sections: [
       'about'
-      'location'
       'speakers'
       'schedule'
+      'location'
       'sponsors'
       'partners'
     ]
