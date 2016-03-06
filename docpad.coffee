@@ -18,6 +18,21 @@ module.exports =
       theme: 'instant-swan'
       url: 'http://braziljs.github.io/conf-boilerplate/'
       # googleanalytics: 'UA-33656081-1'
+      
+      # Styles
+      styles: [
+        "/styles/bootstrap.css"
+        # "/styles/style.css"
+        "/styles/font-awesome.min.css"
+        "/styles/instant-style.css"
+      ]
+
+      # Scripts
+      scripts: [
+        "/scripts/script.js"
+        "/vendor/jquery.js"
+      ]
+
     sections: [
       'about'
       'location'
