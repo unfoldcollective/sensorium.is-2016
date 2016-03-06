@@ -2,21 +2,21 @@ module.exports =
   prompts: false
   templateData:
     conf:
-      name: 'Conference name'
-      description: 'Conference description'
-      date: 'November 15'
-      price: '$100'
-      venue: 'Coco Bongo'
-      address: 'Boulevard Kukulcan, 30'
-      city: 'Cancún'
-      state: 'Quintana'
-    callToAction:
-      text: 'Register now!'
-      link: 'http://eventick.com.br'
-    forkButton: repository: 'https://github.com/braziljs/conf-boilerplate'
+      name: 'Sensorium 2016'
+      description: 'Sensorium festival is a celebration of art and science taking place in Bratislava'
+      date: 'April 19'
+      price: '€70'
+      venue: 'Slovak National Gallery'
+      address: 'Namieste 1'
+      city: 'Bratislava'
+      state: 'Slovakia'
+    # callToAction:
+    #   text: 'Register now!'
+    #   link: 'http://eventick.com.br'
+    # forkButton: repository: 'https://github.com/braziljs/conf-boilerplate'
     site:
       theme: 'instant-swan'
-      url: 'http://braziljs.github.io/conf-boilerplate/'
+      url: 'http://sensorium.is'
       # googleanalytics: 'UA-33656081-1'
       
       # Styles
