@@ -23,28 +23,34 @@
   <link rel="apple-touch-icon" href="<%= @getTheme() %>/img/apple-touch-icon.png">
 
   <!-- STYLES -->
-  <link rel="stylesheet" type="text/css" href="<%= @getTheme() %>/css/main.css">
+  <!-- <link rel="stylesheet" type="text/css" href="<%= @getTheme() %>/css/main.css"> -->
   <!-- / STYLES -->
+
+  <%- @getBlock("meta").toHTML() %>
+  <!-- Styles -->
+  <%- @getBlock('styles').add(@site.styles).toHTML() %>
 
 </head>
 <body>
 
   <div class="global">
 
-    <%-@partial('nav.html.eco', @)%>
+    <%-@partial('instant-nav.html.eco', @)%>
+    <%-@partial('instant-header.html.eco', {name:@document.name, title:@document.title})%>
 
-    <!-- CONTENT -->
-    <div class="content" id="content">
-      <div class="wrapper">
-        <%- @content %>
-      </div>
-    </div>
-    <!-- / CONTENT -->
+    <div id="content" class="container content">
+      <div class="row centered mt mb">
+        <div class="col-lg-8 col-lg-offset-2">
+          <%- @content %>
+        </div>
+
+      </div><!--/row -->
+    </div><!--/container -->
 
   </div>
-
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="<%= @getTheme() %>/js/jquery.js"><\/script>')</script>
+  
+  <!-- <%- @getBlock("scripts").add(["/vendor/jquery.js"]).toHTML() %> -->
+  <%- @getBlock('scripts').add(@site.scripts).toHTML() %>
 
   <!-- GOOGLE ANALYTICS -->
   <script type="text/javascript">
