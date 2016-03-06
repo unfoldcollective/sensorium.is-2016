@@ -4,6 +4,7 @@
 
   <title itemprop="name"><%= @conf.name %></title>
 
+  <%- @getBlock("meta").toHTML() %>
   <meta charset="utf-8">
   <meta name="author" content="<%= @conf.name %>">
   <meta name="description" content="<%= @conf.description %>">
@@ -21,12 +22,7 @@
 
   <link rel="shortcut icon" href="<%= @getTheme() %>/img/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="<%= @getTheme() %>/img/apple-touch-icon.png">
-
-  <!-- STYLES -->
-  <!-- <link rel="stylesheet" type="text/css" href="<%= @getTheme() %>/css/main.css"> -->
-  <!-- / STYLES -->
-
-  <%- @getBlock("meta").toHTML() %>
+  
   <!-- Styles -->
   <%- @getBlock('styles').add(@site.styles).toHTML() %>
 
@@ -35,8 +31,8 @@
 
   <div class="global">
 
-    <%-@partial('instant-nav.html.eco', @)%>
-    <%-@partial('instant-header.html.eco', {name:@document.name, title:@document.title})%>
+    <%-@partial('instant-nav.html.eco', {showSections:false})%>
+    <%-@partial('instant-header.html.eco', {title:@document.name, subtitle:@document.title})%>
 
     <div id="content" class="container content">
       <div class="row centered mt mb">

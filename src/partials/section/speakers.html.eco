@@ -1,25 +1,22 @@
-<h2 class="section-title"><%= @labels['speakers'] %></h2>
-
-<ul class="speakers-list">
-<% for speaker in @schedule: %>
-  <% if speaker.presentation: %>
-    <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
-      <% if speaker.photo: %>
-        <span class="speaker-photo">
-          <img class="photo" src="<%= speaker.photo %>" alt="<%= speaker.name %>" itemprop="image">
-        </span>
+<div class="container">
+  <div class="row centered mt mb">
+    <h2 class="section-title"><%= @labels['speakers'] %></h2>
+    <ul class="speakers-list">
+      <% for speaker in @getCollection("speakers").toJSON(): %>
+        <!-- <p><%= speaker.name %></p> -->
+        <li class="col-lg-4 col-md-4 col-sm-6 gallery">
+            <div class="hover-effect-grid">
+              <figure class="effect-jazz">
+                <img src="<%= speaker.thumbnail %>" alt="img24"/>
+                <figcaption>
+                  <h2><%= speaker.name %></h2>
+                  <p><%= speaker.title %></p>
+                  <a href="<%= speaker.url %>">View more</a>
+                </figcaption>     
+              </figure>
+            </div>
+        </li>
       <% end %>
-
-      <h3 class="speech-title">
-        <% if speaker.presentation.time: %>
-          <span class="speech-time"><%= speaker.presentation.time %></span>
-        <% end %>
-          <span> <%= speaker.presentation.title %></span>
-      </h3>
-
-      <h3 class="speakers-name"><%= speaker.name %> <% if speaker.link: %><a href="<%= speaker.link.href %>" title="<%= speaker.link.text %>"><%= speaker.link.text %></a><% end %></h3>
-      <p class="speakers-bio"><%= speaker.bio %></p>
-    </li>
-  <% end %>
-<% end %>
-</ul>
+    </ul>
+  </div><!--/row -->
+</div><!--/container -->

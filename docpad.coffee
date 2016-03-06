@@ -25,14 +25,16 @@ module.exports =
         # "/styles/style.css"
         "/styles/font-awesome-min.css"
         "/styles/instant-style.css"
-        "/styles/ui-hover-effects-2.css"
+        "/styles/ui-hover-effects.css"
         "/styles/ui-buttons.css"
+
       ]
 
       # Scripts
       scripts: [
-        "/scripts/script.js"
         "/vendor/jquery.js"
+        "/scripts/main.js"
+        "/scripts/script.js"
       ]
 
     sections: [
@@ -159,5 +161,5 @@ module.exports =
       @site.url
   collections:
     speakers: ->
-      @getCollection("html").findAllLive({relativeOutDirPath: 'speakers'}).on "add", (model) ->
+      @getCollection("html").findAllLive({relativeOutDirPath: 'speakers'}, [{order:1}]).on "add", (model) ->
         model.setMetaDefaults({layout:"speaker"})
