@@ -34,8 +34,8 @@ module.exports =
       ]
 
     sections: [
-      'about'
       'speakers'
+      'about'
       'schedule'
       'location'
       'sponsors'

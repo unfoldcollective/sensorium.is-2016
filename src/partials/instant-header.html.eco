@@ -1,9 +1,11 @@
 <div id="headerwrap">
     <div class="container">
 		<div class="row">
-			<div class="col-lg-8 col-lg-offset-2">
-				<h1><%=@name or 'Speaker'%></h1>
-				<h4><%=@title or 'Title'%></h4>
+			<div class="col-lg-8 col-lg-offset-2 white">
+				<h4><%=@supertitle or ''%></h4>
+				<h1><%=@title or ''%></h1>
+				<h3><%=@subtitle or ''%></h3>
+				<h4><%=@subsubtitle or ''%></h4>
 			</div>
 		</div><!--/row -->
     </div> <!-- /container -->

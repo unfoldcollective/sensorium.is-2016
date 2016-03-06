@@ -4,6 +4,7 @@
 
   <title itemprop="name"><%= @conf.name %></title>
 
+  <%- @getBlock("meta").toHTML() %>
   <meta charset="utf-8">
   <meta name="author" content="<%= @conf.name %>">
   <meta name="description" content="<%= @conf.description %>">
@@ -24,33 +25,27 @@
 
   <!-- STYLES -->
   <link rel="stylesheet" type="text/css" href="<%= @getTheme() %>/css/main.css">
+  <%- @getBlock('styles').add(@site.styles).toHTML() %>
   <!-- / STYLES -->
 
 </head>
 <body>
 
   <div class="global">
-
-    <%-@partial('nav.html.eco', @)%>
-    <%-@partial('header.html.eco', @)%>
+    <%-@partial('instant-nav.html.eco', {showSections:true})%>
+    <%-@partial('instant-header.html.eco', {title:@document.title, subtitle:@document.subtitle, subsubtitle:@document.datum})%>
 
     <!-- CONTENT -->
     <div class="content" id="content">
       <div class="wrapper">
         <%- @content %>
-        <!-- FOOTER -->
-        <footer class="footer">
-          <p>Made with ♥ by <a href="https://github.com/braziljs/conf-boilerplate">Conf Boilerplate</a> :)</p>
-        </footer>
-        <!-- / FOOTER -->
       </div>
     </div>
     <!-- / CONTENT -->
 
   </div>
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="<%= @getTheme() %>/js/jquery.js"><\/script>')</script>
+  <%- @getBlock('scripts').add(@site.scripts).toHTML() %>
 
   <% if @conf.address != '': %>
   <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
