@@ -25,6 +25,8 @@ module.exports =
         # "/styles/style.css"
         "/styles/font-awesome-min.css"
         "/styles/instant-style.css"
+        "/styles/ui-hover-effects-2.css"
+        "/styles/ui-buttons.css"
       ]
 
       # Scripts

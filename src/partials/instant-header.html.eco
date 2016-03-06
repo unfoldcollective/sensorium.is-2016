@@ -6,6 +6,9 @@
 				<h1><%=@title or ''%></h1>
 				<h3><%=@subtitle or ''%></h3>
 				<h4><%=@subsubtitle or ''%></h4>
+				<% if @calltoaction: %>
+					<button class="centeredblock button button--wayra button--border-medium button--text-upper button--size-s button--text-thick button--inverted">Get Tickets</button>
+				<% end %>
 			</div>
 		</div><!--/row -->
     </div> <!-- /container -->
