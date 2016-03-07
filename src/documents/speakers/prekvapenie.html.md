@@ -1,12 +1,13 @@
 ---
-name: Prekvapenie
-title: TBC
-photo: themes/yellow-swan/img/speaker.jpg
-company: Prekvapenie
-<!-- link-href: http://Prekvapenie.sk -->
-<!-- link-text: @Prekvapenie -->
+name: Surprise
+title: To be announced shortly... 
+image: /images/speakers/dds.jpg
+thumbnail: /images/speakers/thumb-prekvapenie.png
+<!-- linkhref: http://Prekvapenie.sk -->
+<!-- linktext: @Prekvapenie -->
 order: 3
-thumbnail: images/thumbnails/thumb-karsten-schmidt.png
 ---
 
-Jan Sicko is an educator and artist from Slovakia.
+Čoskoro sa dozviete viac…
+
+You will find out more soon...

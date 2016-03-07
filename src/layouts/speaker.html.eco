@@ -33,12 +33,19 @@
   <div class="global">
 
     <%-@partial('instant-nav.html.eco', {showSections:false})%>
-    <%-@partial('instant-header.html.eco', {title:@document.name, subtitle:@document.title})%>
+    <%-@partial('instant-header.html.eco', {title:@document.name, subtitle:@document.title, image:@document.image})%>
 
-    <div id="content" class="container content">
-      <div class="row centered mt mb">
+    <div id="content" class="container">
+      <div class="row mt mb">
         <div class="col-lg-8 col-lg-offset-2">
           <%- @content %>
+          <% if @document.twitter: %>
+            <p><i class="fa fa-twitter"></i> <a href="https://twitter.com/<%= @document.twitter %>" target="_blank"><%= @document.twitter %></a></p>
+          <% end %>
+          <% if @document.linkhref: %>
+            <p><i class="fa fa-link"></i> <a href="<%= @document.linkhref %>" target="_blank"><%= @document.linktext %></a></p>
+          <% end %>
+
         </div>
 
       </div><!--/row -->

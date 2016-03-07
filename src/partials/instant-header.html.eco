@@ -1,16 +1,22 @@
-<div id="headerwrap">
+<div id="headerwrap" style="background: url(<%=@image%>) no-repeat center center fixed; background-size: cover">
+<!-- <div id="headerwrap"> -->
     <div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2 white">
 				<h4><%=@supertitle or ''%></h4>
-				<!-- <h1><%=@title or ''%></h1> -->
-				<img src="images/sensorium-logo.svg" alt="Sensorium 2016">
-				<br>
-				<br>
+				<% if @showLogotype: %>
+					<img src="/images/sensorium-logo.svg" alt="Sensorium 2016">
+					<br>
+					<br>
+				<% else: %>
+					<h1><%=@title or ''%></h1>
+				<% end %>
+				
+				
 				<h3><%=@subtitle or ''%></h3>
 				<h4><%=@subsubtitle or ''%></h4>
 				<br>
-				<% if @calltoaction: %>
+				<% if @showCalltoaction: %>
 					<button class="centeredblock button button--wayra button--border-medium button--text-upper button--size-s button--text-thick button--inverted">Get Tickets</button>
 				<% end %>
 			</div>
