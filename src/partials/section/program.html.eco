@@ -3,6 +3,7 @@
 
 
 <h3>Workshop</h3>
+<h5>at LAB</h5>
 <div class="schedule-tbl">
   <table class="centeredblock">
     <tbody>
@@ -17,9 +18,11 @@
 </div>
 
 <h3>Evening Program</h3>
+<h5>at Berlinka, SNG</h5>
 <div class="schedule-tbl">
   <table class="centeredblock">
     <tbody>
+    
       <!-- SPEAKERS -->
       <% for speaker in @getCollection("speakers").toJSON(): %>
       <tr>
@@ -39,7 +42,7 @@
       <!-- AFTERPARTY -->
       <tr>
         <td class="col-1 schedule-time">21.00 - 22.30</td>
-        <td class="col-2 schedule-description"> After-party | DJ Matwe Drappenmadchenfeller </td>
+        <td class="col-2 schedule-description"> After-party | <a href="https://www.facebook.com/Drappenmadchenfeller" target="_blank">DJ Matwe Drappenmadchenfeller </a></td>
       </tr>
 
     </tbody>
