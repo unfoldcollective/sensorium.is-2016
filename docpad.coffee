@@ -15,7 +15,7 @@ module.exports =
     #   link: 'http://eventick.com.br'
     # forkButton: repository: 'https://github.com/braziljs/conf-boilerplate'
     site:
-      theme: 'instant-swan'
+      theme: 'yellow-swan'
       url: 'http://sensorium.is'
       # googleanalytics: 'UA-33656081-1'
       
