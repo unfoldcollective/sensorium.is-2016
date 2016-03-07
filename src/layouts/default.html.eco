@@ -24,7 +24,7 @@
   <link rel="apple-touch-icon" href="<%= @getTheme() %>/img/apple-touch-icon.png">
 
   <!-- STYLES -->
-  <link rel="stylesheet" type="text/css" href="<%= @getTheme() %>/css/main.css">
+  <!-- <link rel="stylesheet" type="text/css" href="<%= @getTheme() %>/css/main.css"> -->
   <%- @getBlock('styles').add(@site.styles).toHTML() %>
   <!-- / STYLES -->
 

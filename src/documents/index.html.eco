@@ -4,13 +4,10 @@ title: SENSORIUM
 subtitle: A celebration of Art, Design and Technology
 datum: 19 April 2016
 ---
-
-<% for section in @sections : %>
-  <!-- <%= section.toUpperCase() %> -->
-
-  <section class="<%= section %>" id="<%= section %>">
-    <%- @partial("section/#{section}.html.eco", @) %>
-  </section>
-
-  <!-- / <%= section.toUpperCase() %> -->
-<% end %>
+<div class="container">
+	<% for section in @sections : %>
+	  <section class="<%= section %>" id="<%= section %>">
+	    <%- @partial("section/#{section}.html.eco", @) %>
+	  </section>
+	<% end %>
+</div>

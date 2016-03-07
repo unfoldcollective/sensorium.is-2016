@@ -1,11 +1,7 @@
 /*
+ * Based on:
  * Author: Carlos Alvarez
  * URL: http://Alvarez.is
- *
- * Project Name: NYC Design
- * Version: 1.0
- * Date: 04-20-2014
- * URL: 
  */
 
 
@@ -76,6 +72,9 @@ h1, h2, h3, h4, h5, h6 {
     color: #4a4a4a;
 }
 
+ul {
+	list-style-type: none;
+}
 
 .navbar-brand {
 	font-weight: 700;
@@ -139,6 +138,10 @@ h1, h2, h3, h4, h5, h6 {
 
 #headerwrap h4 {
 	font-weight: 400;
+}
+
+#speakers ul {
+	margin-left: -40px;
 }
 
 #social {
