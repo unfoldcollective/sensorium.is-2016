@@ -1,0 +1,47 @@
+<h2 class="section-title"><%= @labels['program'] %></h2>
+
+
+
+<h3>Workshop</h3>
+<div class="schedule-tbl">
+  <table class="centeredblock">
+    <tbody>
+      <% for workshop in @getCollection("workshops").toJSON(): %>
+      <tr>
+        <td class="col-1 schedule-time"><%= workshop.time %></td>
+        <td class="col-2 schedule-description"> <a href="<%=workshop.url%>"> <%= workshop.description %></a></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<h3>Evening Program</h3>
+<div class="schedule-tbl">
+  <table class="centeredblock">
+    <tbody>
+      <!-- SPEAKERS -->
+      <% for speaker in @getCollection("speakers").toJSON(): %>
+      <tr>
+        <td class="col-1 schedule-time"><%= speaker.time %></td>
+        <td class="col-2 schedule-description"> <a href="<%=speaker.url%>"> <%= speaker.description %></a></td>
+      </tr>
+      <% end %>
+
+      <!-- ACTIVITIES -->
+      <% for activity in @getCollection("activities").toJSON(): %>
+      <tr>
+        <td class="col-1 schedule-time"><%= activity.time %></td>
+        <td class="col-2 schedule-description"> <a href="<%=activity.url%>"> <%= activity.description %></a></td>
+      </tr>
+      <% end %>
+
+      <!-- AFTERPARTY -->
+      <tr>
+        <td class="col-1 schedule-time">21.00 - 22.30</td>
+        <td class="col-2 schedule-description"> After-party | DJ Matwe Drappenmadchenfeller </td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>

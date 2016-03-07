@@ -27,7 +27,7 @@ module.exports =
         "/styles/instant-style.css"
         "/styles/ui-hover-effects.css"
         "/styles/ui-buttons.css"
-
+        "/styles/schedule.css"
       ]
 
       # Scripts
@@ -40,7 +40,7 @@ module.exports =
     sections: [
       'speakers'
       'about'
-      'schedule'
+      'program'
       'location'
       'sponsors'
       'partners'
@@ -49,100 +49,26 @@ module.exports =
       about: 'About'
       location: 'Location'
       speakers: 'Speakers'
-      schedule: 'Schedule'
+      program: 'Program'
       sponsors: 'Sponsors'
       partners: 'Partners'
       contact: 'Contact'
     schedule: [
+      # {
+      #   time: '18.00'
+      #   description: 'Welcome'
+      # }
       {
-        name: 'Check-in / Breakfast'
-        time: '9h00'
+        description: 'Special Guest | To be announced...'
+        time: '18.00 - 19.00'
       }
       {
-        name: 'Linus Torvalds'
-        photo: 'themes/yellow-swan/img/speaker.jpg'
-        bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo'
-        company: 'Linux Foundation'
-        link:
-          href: 'http://twitter.com/linus'
-          text: '@linus'
-        presentation:
-          title: 'Digging into a Linux Kernel'
-          description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo'
-          time: '10h00'
+        description: 'Pau Garcia | Domestic Data Streamers'
+        time: '19.00 - 20.00'
       }
       {
-        name: 'Bill Gates'
-        photo: 'themes/yellow-swan/img/speaker.jpg'
-        bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo'
-        company: 'Microsoft'
-        link:
-          href: 'http://github.com/billy95'
-          text: '@billy95'
-        presentation:
-          title: 'Introducing Windows 12'
-          description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo'
-          time: '11h00'
-      }
-      {
-        name: 'Lunch'
-        time: '12h00'
-      }
-      {
-        name: 'Chuck Norris'
-        photo: 'themes/yellow-swan/img/speaker.jpg'
-        bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo'
-        company: 'Delta Command'
-        link:
-          href: 'http://twitter.com/littlechuck'
-          text: '@littlechuck'
-        presentation:
-          title: 'How to kill a elephant with one finger'
-          description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo'
-          time: '13h00'
-      }
-      {
-        name: 'Steve Jobs'
-        photo: 'themes/yellow-swan/img/speaker.jpg'
-        bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo'
-        company: 'Apple, Inc.'
-        link:
-          href: 'http://github.com/stevie'
-          text: '@stevie'
-        presentation:
-          title: 'Presenting iPad'
-          description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo'
-          time: '14h00'
-      }
-      {
-        name: 'Coffee-break'
-        time: '15h00'
-      }
-      {
-        name: 'Mark Zuckerberg'
-        photo: 'themes/yellow-swan/img/speaker.jpg'
-        bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo'
-        company: 'Facebook'
-        link:
-          href: 'http://twitter.com/zuck'
-          text: '@zuck'
-        presentation:
-          title: 'Revealing Facebook Secrets'
-          description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo'
-          time: '16h00'
-      }
-      {
-        name: 'Steve Wozniak'
-        photo: 'themes/yellow-swan/img/speaker.jpg'
-        bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo'
-        company: 'Apple, Inc.'
-        link:
-          href: 'http://twitter.com/woz'
-          text: '@woz'
-        presentation:
-          title: 'Why do I prefer Android over iPhone'
-          description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo'
-          time: '17h00'
+        description: 'Karsten Schmidt | Post Spectacular'
+        time: '20.00 - 21.00'
       }
     ]
     sponsors: [ {
@@ -161,5 +87,11 @@ module.exports =
       @site.url
   collections:
     speakers: ->
-      @getCollection("html").findAllLive({relativeOutDirPath: 'speakers'}, [{order:1}]).on "add", (model) ->
+      @getCollection("html").findAllLive({relativeOutDirPath: 'speakers'}, [{time:1}]).on "add", (model) ->
+        model.setMetaDefaults({layout:"speaker"})
+    workshops: ->
+      @getCollection("html").findAllLive({relativeOutDirPath: 'workshops'}, [{time:1}]).on "add", (model) ->
+        model.setMetaDefaults({layout:"speaker"})
+    activities: ->
+      @getCollection("html").findAllLive({relativeOutDirPath: 'program'}, [{time:-1}]).on "add", (model) ->
         model.setMetaDefaults({layout:"speaker"})

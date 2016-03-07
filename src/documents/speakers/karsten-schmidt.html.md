@@ -1,13 +1,15 @@
 ---
 name: Karsten Schmidt
-title: All the things!
+<!-- subtitle: All the things! -->
 image: /images/speakers/karsten-schmidt.jpg
 thumbnail: /images/speakers/thumb-karsten-schmidt.png
 company: Post Spectacular
+description: Karsten Schmidt | Post Spectacular
 linkhref: http://postspectacular.com
 linktext: Post Spectacular
 twitter: @toxi
-order: 1
+time: 20.00 - 21.00
+order: 3
 ---
 
 Karsten Schmidt je svetoznámy umelec a dizajnér, ktorý spája výpočtovú techniku s umením, dizajnom a remeslami. Pôvodom z východného nemecka, pôsobiaci v Londýne sa počas posledných +25 rokov zaoberá trans-disciplinárnym spôsobom práce. Vrámci svojho projektu PostSpectacular aktívne skúma možnosti intersekcie dizajnu, umenia, softvérového vývoja a vzdelania a aplikácie tohto mixu v rôznych priemysloch ako architektúra, branding, digitálna fabrikácia, interaktívne inštalácie, motion grafika a hudba. Silný konceptuálny mysliteľ, vždy usilujúci sa o absolútnu kreatívnu voľnosť, Karstenov dizajnový prístup je založený na vnímaní myšlienok ako srdcom poddajný softvér, čo zasa informuje všetky ostatné aspekty každého projektu. 

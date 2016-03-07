@@ -33,7 +33,7 @@
   <div class="global">
 
     <%-@partial('instant-nav.html.eco', {showSections:false})%>
-    <%-@partial('instant-header.html.eco', {title:@document.name, subtitle:@document.title, image:@document.image})%>
+    <%-@partial('instant-header.html.eco', {title:@document.name, subtitle:@document.subtitle, image:@document.image})%>
 
     <div id="content" class="container">
       <div class="row mt mb">

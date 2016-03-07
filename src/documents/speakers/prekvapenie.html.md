@@ -1,11 +1,13 @@
 ---
 name: Surprise
-title: To be announced shortly... 
+subtitle: To be announced shortly... 
+description: Special Guest | To be announced...
 image: /images/speakers/dds.jpg
 thumbnail: /images/speakers/thumb-prekvapenie.png
 <!-- linkhref: http://Prekvapenie.sk -->
 <!-- linktext: @Prekvapenie -->
-order: 3
+order: 1
+time: 18.00 - 19.00
 ---
 
 Čoskoro sa dozviete viac…
