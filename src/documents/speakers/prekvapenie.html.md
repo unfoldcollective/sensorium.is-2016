@@ -12,4 +12,6 @@ time: 18.00 - 19.00
 
 Čoskoro sa dozviete viac…
 
+---
+
 You will find out more soon...
