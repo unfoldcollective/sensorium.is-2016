@@ -1,16 +1,17 @@
-<h2 class="section-title"><%= @labels['partners'] %></h2>
-<ul class="partners-list">
+<h2 class="section-title"><%= @labels['supporters'] %></h2>
 
-<% for partner in @partners: %>
+<ul class="sponsors-list">
+  <% for partner in @supporters: %>
   <li class="partner-item" itemscope itemtype="http://schema.org/Organization">
     <a href="<%= partner.url %>" class="partner-logo partner-link" itemprop="url">
       <img src="<%= partner.logo %>" alt="<%= partner.name %>" class="photo" itemprop="image">
     </a>
   </li>
-<% end %>
+  <% end %>
+  
   <li class="partner-item">
-    <a class="partner-logo partner-link partner-call" href="#">
-    	<img src="<%= @getTheme() %>/img/your-logo.jpg" alt="your logo" class="photo">
-    </a>
+    <button class="partner-call button button--wayra button--border-medium button--text-upper button--size-s button--text-thick">
+      Your logo here...
+    </button>
   </li>
 </ul>

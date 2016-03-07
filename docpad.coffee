@@ -10,10 +10,6 @@ module.exports =
       address: 'Námestie Ľudovíta Štúra 33/4'
       city: 'Bratislava'
       country: 'Slovakia'
-    # callToAction:
-    #   text: 'Register now!'
-    #   link: 'http://eventick.com.br'
-    # forkButton: repository: 'https://github.com/braziljs/conf-boilerplate'
     site:
       theme: 'yellow-swan'
       url: 'http://sensorium.is'
@@ -28,6 +24,7 @@ module.exports =
         "/styles/ui-hover-effects.css"
         "/styles/ui-buttons.css"
         "/styles/schedule.css"
+        "/styles/sponsors.css"
       ]
 
       # Scripts
@@ -36,21 +33,19 @@ module.exports =
         "/scripts/main.js"
         "/scripts/script.js"
       ]
-
     sections: [
       'speakers'
       'about'
       'program'
       'location'
-      'sponsors'
-      'partners'
+      'supporters'
     ]
     labels:
       about: 'About'
       location: 'Location'
       speakers: 'Speakers'
       program: 'Program'
-      sponsors: 'Sponsors'
+      supporters: 'Sponsors'
       partners: 'Partners'
       contact: 'Contact'
     schedule: [
@@ -71,16 +66,30 @@ module.exports =
         time: '20.00 - 21.00'
       }
     ]
-    sponsors: [ {
-      name: 'Eventick'
-      logo: 'themes/yellow-swan/img/sponsor.png'
-      url: 'http://eventick.com.br'
-    } ]
-    partners: [ {
-      name: 'BrazilJS'
-      logo: 'themes/yellow-swan/img/partner.png'
-      url: 'http://braziljs.org'
-    } ]
+    supporters: [ 
+      {
+        name: 'Studio 727'
+        logo: '/images/sponsors/studio727.png'
+        url: 'http://www.727.sk/'
+      }
+      {
+        name: 'Nethemba'
+        logo: '/images/sponsors/nethemba.png'
+        url: 'https://nethemba.com/sk'
+      }
+    ]
+    partners: [ 
+      {
+        name: 'Studio 727'
+        logo: '/images/sponsors/studio727.png'
+        url: 'http://www.727.sk/'
+      }
+      {
+        name: 'Nethemba'
+        logo: '/images/sponsors/nethemba.png'
+        url: 'https://nethemba.com/sk'
+      }
+    ]
     getTheme: ->
       '/themes/' + @site.theme
     getUrl: ->
