@@ -1,6 +1,7 @@
 <h2 class="section-title"><%= @labels['about'] %></h2>
-<p itemprop="description">So you want to organize a conference? That's pretty awesome! But we know that you don't have time to create the website, since you have to worry about contacting sponsors, chossing the right place, buying airplane tickets for speakers and many other things.</p>
 
-<p>That's why we created this project! <a href="https://github.com/braziljs/conf-boilerplate">Conf Boilerplate</a> is an iniciative of <a href="http://braziljs.org">BrazilJS Foundation</a> that provides a simple structure built on top of Docpad, a static generator in NodeJS, with all the things you need to create a event. We also provide a responsive template with i18n!</p>
+<p>Myšlienka podujatia Sensorium sa zrodila na festivale Resonate, ktorý spája významných, svetových umelcov, dizajnérov, výskumníkov a vzdelávateľov. Uchvátení úžasnými projektmi, ktoré sme videli a neuveritelne priateľskými lektormi, ktorí vyzerali, že dokážu aj nemožné sme si povedali, že niečo z tejto atmosféry musíme priniesť aj domov.</p>
 
-<p>This is just a live demo, check our <a href="https://github.com/braziljs/conf-boilerplate">repository on Github</a> for more details =D</p>
+<p>A tak sa tento rok nechajte uchvátiť vy sami. Sensorium prinesie do Bratislavy projekty využívajúce moderné technológie, no hlavne možnosť spoznajť zaujímavých umelcov a dizajnérov, ktorí pri svoje práci využívajú primárne výpočtovú techniku. Projekt je zameraný na prezentáciu umelcov a ich diel, ale aj na rozvírenie debaty ohľadom názorov, myšlienok a vízií spojených s výpočtovou technikou. Sensorium je prvým ročníkom jednej z najpokrokovejších udalostí na Slovensku zameraných na prienik umenia, dizajnu a technológie.</p>
+
+<p>Tešíme sa na vás!</p>
