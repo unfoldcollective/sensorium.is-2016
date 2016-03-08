@@ -1,0 +1,25 @@
+<div id="footerwrap">
+  <div class="container">
+    <div class="row centered">
+      <div class="col-sm-4">
+        <h4><b>SENSORIUM</b> is brought to you by</h4>
+        <p>
+          <%-@partial('credits.html.eco')%>
+        </p>
+      </div>
+      
+      <div class="col-sm-4">
+        <h4>Contact</h4>
+        <p><i class="fa fa-envelope"></i> <a href="mailto:sensorium2016@gmail.com">sensorium2016@gmail.com</a></p>
+        <p><i class="fa fa-facebook"></i> <a target="_blank" href="https://www.facebook.com/events/1717175778565575/">Sensorium 2016</a></p>
+        <p><i class="fa fa-link"></i> <a target="_blank" href="http://unfold.is">unfold.is</a></p>
+      </div>
+    
+      <div class="col-sm-4">
+        <h4>Newsletter</h4>
+        <!-- <p>Subscribe to our newsletter to receive updates about Sensorium 2016 and other projects</p> -->
+        <p>Opening soon...</p>
+      </div>
+    </div>
+  </div>
+</div>

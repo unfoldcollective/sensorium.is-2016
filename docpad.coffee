@@ -25,12 +25,14 @@ module.exports =
         "/styles/ui-buttons.css"
         "/styles/schedule.css"
         "/styles/sponsors.css"
+        "/styles/footer.css"
       ]
 
       # Scripts
       scripts: [
         "/vendor/jquery.js"
         "/scripts/main.js"
+        "/scripts/footerheight.js"
         "/scripts/script.js"
       ]
     sections: [

@@ -10,7 +10,7 @@
   <meta name="description" content="<%= @conf.description %>">
   <meta name="viewport" content="width=device-width">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <%-@partial('credits.html.eco')%>
+  <%-@partial('credits-comment.html.eco')%>
   
   <!-- FACEBOOK -->
   <meta property="fb:app_id" content="372862979453673">
@@ -37,9 +37,12 @@
     <%-@partial('instant-header.html.eco', {image:@document.image, showLogotype:true, title:@document.title, subtitle:@document.subtitle, subsubtitle:@document.datum, showCalltoaction:true})%>
 
     <!-- CONTENT -->
-    <%- @content %>
+    <div id="content">
+      <%- @content %>
+    </div>
     <!-- / CONTENT -->
-
+    
+    <%-@partial('footer.html.eco')%>
   </div>
 
   <%- @getBlock('scripts').add(@site.scripts).toHTML() %>
