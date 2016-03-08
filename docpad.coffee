@@ -38,14 +38,15 @@ module.exports =
       'about'
       'program'
       'location'
-      'supporters'
+      'sponsors'
+      'partners'
     ]
     labels:
       about: 'About'
       location: 'Location'
       speakers: 'Speakers'
       program: 'Program'
-      supporters: 'Sponsors'
+      sponsors: 'Sponsors'
       partners: 'Partners'
       contact: 'Contact'
     schedule: [
@@ -66,7 +67,7 @@ module.exports =
         time: '20.00 - 21.00'
       }
     ]
-    supporters: [ 
+    sponsors: [ 
       {
         name: 'Studio 727'
         logo: '/images/sponsors/studio727.png'
@@ -80,14 +81,19 @@ module.exports =
     ]
     partners: [ 
       {
-        name: 'Studio 727'
-        logo: '/images/sponsors/studio727.png'
-        url: 'http://www.727.sk/'
+        name: 'Resonate'
+        logo: '/images/partners/resonate-wordmark.svg'
+        url: 'http://resonate.io/'
       }
       {
-        name: 'Nethemba'
-        logo: '/images/sponsors/nethemba.png'
-        url: 'https://nethemba.com/sk'
+        name: 'Slovenská Národná Galéria'
+        logo: '/images/partners/logo-sng.svg'
+        url: 'http://www.sng.sk'
+      }
+      {
+        name: 'Lab'
+        logo: '/images/partners/logo-lab.svg'
+        # url: '#'
       }
     ]
     getTheme: ->
