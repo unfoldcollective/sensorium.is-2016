@@ -5,7 +5,7 @@
 
     // Init functions, called on DOMContentLoaded event
     conf.init = function () {
-        conf.map.init($('#map-canvas'));
+        // conf.map.init($('#map-canvas'));
         conf.menu.init();
     };
 
