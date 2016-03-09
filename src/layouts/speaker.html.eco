@@ -36,20 +36,25 @@
 
     <div id="content">
       <div class="container">
-      <div class="row mt mb">
-        <div class="col-lg-8 col-lg-offset-2">
-          <%- @content %>
-          <% if @document.twitter: %>
-            <p><i class="fa fa-twitter"></i> <a href="https://twitter.com/<%= @document.twitter %>" target="_blank"><%= @document.twitter %></a></p>
-          <% end %>
-          <% if @document.linkhref: %>
-            <p><i class="fa fa-link"></i> <a href="<%= @document.linkhref %>" target="_blank"><%= @document.linktext %></a></p>
-          <% end %>
+        <div class="row mt mb">
+          <div class="col-lg-8 col-lg-offset-2">
+            <%- @content %>
+            <% if @document.twitter: %>
+              <p><i class="fa fa-twitter"></i> <a href="https://twitter.com/<%= @document.twitter %>" target="_blank"><%= @document.twitter %></a></p>
+            <% end %>
+            <% if @document.linkhref: %>
+              <p><i class="fa fa-link"></i> <a href="<%= @document.linkhref %>" target="_blank"><%= @document.linktext %></a></p>
+            <% end %>
 
-        </div>
+            <br>
+            <a class="buttonlink" target="_blank" href="https://ti.to/sensorium-2016/sensorium-2016">
+              <button class="button button--wayra button--border-medium button--text-upper button--size-s button--text-thick button--inverted">Get Tickets</button>
+            </a>
 
-      </div><!--/row -->
-    </div><!--/container -->
+          </div>
+
+        </div><!--/row -->
+      </div><!--/container -->
     </div>
 
   </div>

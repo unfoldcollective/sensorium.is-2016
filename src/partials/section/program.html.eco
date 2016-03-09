@@ -1,7 +1,5 @@
 <h2 class="section-title"><%= @labels['program'] %></h2>
 
-
-
 <h3>Workshop</h3>
 <h5>at LAB</h5>
 <div class="schedule-tbl">
@@ -16,6 +14,11 @@
     </tbody>
   </table>
 </div>
+<br>
+<a class="buttonlink" target="_blank" href="https://ti.to/sensorium-2016/sensorium-2016">
+  <button class="centeredblock button button--wayra button--border-medium button--text-upper button--size-s button--text-thick button--inverted">Get Tickets</button>
+</a>
+<br>
 
 <h3>Evening Program</h3>
 <h5>at Berlinka, SNG</h5>
@@ -51,3 +54,7 @@
     </tbody>
   </table>
 </div>
+<br>
+<a class="buttonlink" target="_blank" href="https://ti.to/sensorium-2016/sensorium-2016">
+  <button class="centeredblock button button--wayra button--border-medium button--text-upper button--size-s button--text-thick button--inverted">Get Tickets</button>
+</a>
