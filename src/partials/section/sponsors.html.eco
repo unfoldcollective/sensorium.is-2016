@@ -9,9 +9,9 @@
   </li>
   <% end %>
   
-  <li class="partner-item">
+  <li class="partner-item partner-call" >
     <a href="mailto:sensorium2016@gmail.com">
-      <button class="partner-call button button--wayra button--border-medium button--text-upper button--size-s button--text-thick">
+      <button class="button button--wayra button--border-medium button--text-upper button--size-s button--text-thick">
       
         Your logo here...
       
