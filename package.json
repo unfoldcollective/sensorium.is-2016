@@ -1,9 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "deploy": "docpad deploy-ghpages --env static",
-    "generate": "docpad generate --env static",
-    "watch": "docpad run"
+    "start": "node_modules/.bin/docpad-server",
+    "test": "node_modules/.bin/docpad generate --debug --silent",
+    "info": "node_modules/.bin/docpad info --silent"
   },
   "dependencies": {
     "docpad": "~6.78.1",
@@ -13,5 +13,10 @@
     "docpad-plugin-livereload": "~2.7.1",
     "docpad-plugin-marked": "~2.3.0",
     "docpad-plugin-partials": "~2.9.2"
-  }
+  },
+  "engines": {
+    "node": "5",
+    "npm": "3"
+  },
+  "main": "node_modules/.bin/docpad-server"
 }
