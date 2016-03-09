@@ -80,6 +80,11 @@ module.exports =
         url: 'http://www.sng.sk'
       }
       {
+        name: 'Goethe Institut'
+        logo: 'images/partners/logo-goethe-institut.png'
+        url: 'https://www.goethe.de/en/index.html'
+      }
+      {
         name: 'Lab'
         logo: 'images/partners/logo-lab.svg'
         # url: '#'
