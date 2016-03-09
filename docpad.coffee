@@ -83,6 +83,7 @@ module.exports =
         # url: '#'
       }
     ]
+    # helper functions
     getTheme: ->
       '/themes/' + @site.theme
     getUrl: ->
@@ -91,6 +92,9 @@ module.exports =
       ("../"+style for style in @site.styles) 
     getScriptsFromFirstLevel: ->
       ("../"+script for script in @site.scripts) 
+    # sort function
+    order: (a,b) ->
+      b.order - a.order
   collections:
     speakers: ->
       @getCollection("html").findAllLive({relativeOutDirPath: 'speakers'}, [{time:1}]).on "add", (model) ->

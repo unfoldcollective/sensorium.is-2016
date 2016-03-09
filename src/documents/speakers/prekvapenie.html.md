@@ -7,7 +7,7 @@ image: images/speakers/dds.jpg
 thumbnail: images/speakers/thumb-prekvapenie.png
 <!-- linkhref: http://Prekvapenie.sk -->
 <!-- linktext: @Prekvapenie -->
-order: 1
+order: 3
 time: 18.10 - 19.00
 ---
 

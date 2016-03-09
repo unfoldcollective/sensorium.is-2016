@@ -1,8 +1,7 @@
 <div class="row centered mt mb">
   <h2 class="section-title"><%= @labels['speakers'] %></h2>
   <ul class="speakers-list">
-    <% for speaker in @getCollection("speakers").toJSON(): %>
-      <!-- <p><%= speaker.name %></p> -->
+    <% for speaker in @getCollection("speakers").toJSON().sort(@order): %>
       <li class="col-lg-4 col-md-4 col-sm-6 gallery">
           <div class="hover-effect-grid">
             <figure class="effect-jazz">
@@ -17,4 +16,4 @@
       </li>
     <% end %>
   </ul>
-</div><!--/row -->
+</div>
