@@ -28,6 +28,7 @@ module.exports =
         "styles/schedule.css"
         "styles/sponsors.css"
         "styles/footer.css"
+        "styles/header.css"
       ]
 
       # Scripts
@@ -36,7 +37,8 @@ module.exports =
         "vendor/bootstrap.min.js"
         "scripts/main.js"
         "scripts/footerheight.js"
-        "scripts/script.js"
+        "scripts/inlinesvg.js"
+        # "scripts/script.js"
       ]
     sections: [
       'speakers'

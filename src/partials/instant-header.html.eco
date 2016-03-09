@@ -5,7 +5,7 @@
 			<div class="col-lg-8 col-lg-offset-2 white">
 				<h4><%=@supertitle or ''%></h4>
 				<% if @showLogotype: %>
-					<img src="images/sensorium-logo.svg" alt="Sensorium 2016">
+					<img class="svg" src="images/sensorium-logo.svg" alt="Sensorium 2016">
 					<br>
 					<br>
 				<% else: %>
