@@ -22,7 +22,10 @@
 <div class="schedule-tbl">
   <table class="centeredblock">
     <tbody>
-    
+      <tr>
+        <td class="col-1 schedule-time">18.00 - 18.10</td>
+        <td class="col-2 schedule-description">Welcome</td>
+      </tr>
       <!-- SPEAKERS -->
       <% for speaker in @getCollection("speakers").toJSON(): %>
       <tr>

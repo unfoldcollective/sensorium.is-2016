@@ -1,14 +1,14 @@
 ---
 name: Karsten Schmidt
 <!-- subtitle: All the things! -->
-image: /images/speakers/karsten-schmidt.jpg
-thumbnail: /images/speakers/thumb-karsten-schmidt.png
+image: images/speakers/karsten-schmidt.jpg
+thumbnail: images/speakers/thumb-karsten-schmidt.png
 company: Post Spectacular
 description: Karsten Schmidt | Post Spectacular
 linkhref: http://postspectacular.com
 linktext: Post Spectacular
 twitter: @toxi
-time: 20.00 - 21.00
+time: 20.10 - 21.00
 order: 3
 ---
 

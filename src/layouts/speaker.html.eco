@@ -25,15 +25,14 @@
   <link rel="apple-touch-icon" href="<%= @getTheme() %>/img/apple-touch-icon.png">
   
   <!-- Styles -->
-  <%- @getBlock('styles').add(@site.styles).toHTML() %>
+  <%- @getBlock('styles').add(@getStylesFromFirstLevel()).toHTML() %>
 
 </head>
 <body>
-
   <div class="global">
 
     <%-@partial('instant-nav.html.eco', {showSections:false})%>
-    <%-@partial('instant-header.html.eco', {title:@document.name, subtitle:@document.subtitle, image:@document.image})%>
+    <%-@partial('instant-header.html.eco', {title:@document.name, subtitle:@document.subtitle, image:"../"+@document.image})%>
 
     <div id="content" class="container">
       <div class="row mt mb">
@@ -54,7 +53,7 @@
   </div>
   
   <!-- <%- @getBlock("scripts").add(["/vendor/jquery.js"]).toHTML() %> -->
-  <%- @getBlock('scripts').add(@site.scripts).toHTML() %>
+  <%- @getBlock('scripts').add(@getScriptsFromFirstLevel()).toHTML() %>
 
   <!-- GOOGLE ANALYTICS -->
   <script type="text/javascript">

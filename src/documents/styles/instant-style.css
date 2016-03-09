@@ -77,14 +77,26 @@ h1, h2, h3, h4, h5, h6 {
     color: #4a4a4a;
 }
 
+a {
+	color: #0096AC; // greenish blue
+}
+
 section {
 	padding: 1em;
 	text-align: center;
 }
 
+.section-title {
+	margin-bottom: 30px;
+}
+
 ul {
 	list-style-type: none;
 }
+
+/* ==========================================================================
+   Nav Bar
+   ========================================================================== */
 
 .navbar-brand {
 	font-weight: 700;

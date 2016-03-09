@@ -1,22 +1,37 @@
 <h2 class="section-title"><%= @labels['location'] %></h2>
 
-<p class="event-venue" itemprop="location" itemscope itemtype="http://schema.org/Place">
-	<a href="http://www.sng.sk/en/uvod/navsteva-sng/sluzby/berlinka"><%= @conf.venue %></a>
-</p>
+<div class="row">
+	<div class="col-sm-4 col-sm-offset-2">
+		<p class="event-venue" itemprop="location" itemscope itemtype="http://schema.org/Place">
+			<a href="http://www.sng.sk/en/uvod/navsteva-sng/sluzby/berlinka"><%= @conf.venue %></a>
+		</p>
 
-<p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-  <p itemprop="streetAddress"><%= @conf.address %></p>
-  <p>
-	  <span itemprop="addressLocality"><%= @conf.city %></span>, 
-	  <span itemprop="addressCountry"> <%= @conf.country %></span>
-  </p>
-</p>
+		<p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+		  <p itemprop="streetAddress"><%= @conf.address %></p>
+		  <p>
+			  <span itemprop="addressLocality"><%= @conf.city %></span>, 
+			  <span itemprop="addressCountry"> <%= @conf.country %></span>
+		  </p>
+		</p>
+	
+	</div>
+	<div class="col-sm-4">
+		<p class="event-venue" itemprop="location" itemscope itemtype="http://schema.org/Place">
+			<a href="https://www.google.sk/maps/place/N%C3%A1mestie+SNP+484%2F25,+811+01+Bratislava/@48.1445696,17.1105688,18z/data=!3m1!4b1!4m2!3m1!1s0x476c8943757c3e37:0xf63fe4d37caf6c99?hl=en"><%= @conf.venue2 %></a>
+		</p>
 
-<!-- <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-  <span itemprop="streetAddress"><%= @conf.address %>. </span>
-  <span itemprop="addressLocality"><%= @conf.city %></span>,
-  <span itemprop="addressRegion"> <%= @conf.state %></span>
-</p>
+		<p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+		  <p itemprop="streetAddress"><%= @conf.address2 %></p>
+		  <p>
+			  <span itemprop="addressLocality"><%= @conf.city %></span>, 
+			  <span itemprop="addressCountry"> <%= @conf.country %></span>
+		  </p>
+		</p>
+		
+	</div>
+</div>
 
+
+<!--
 <div id="map-canvas" class="location-area" data-address="<%= @conf.address %>, <%= @conf.city %> - <%= @conf.country %>"></div>
  -->

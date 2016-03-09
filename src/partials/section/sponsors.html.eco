@@ -10,8 +10,12 @@
   <% end %>
   
   <li class="partner-item">
-    <button class="partner-call button button--wayra button--border-medium button--text-upper button--size-s button--text-thick">
-      Your logo here...
-    </button>
+    <a href="mailto:sensorium2016@gmail.com">
+      <button class="partner-call button button--wayra button--border-medium button--text-upper button--size-s button--text-thick">
+      
+        Your logo here...
+      
+      </button>
+    </a>
   </li>
 </ul>

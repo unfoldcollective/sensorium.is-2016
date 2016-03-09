@@ -8,6 +8,8 @@ module.exports =
       price: '€10'
       venue: 'Berlinka, Slovenská Národná Galéria'
       address: 'Námestie Ľudovíta Štúra 33/4'
+      venue2: 'LAB'
+      address2: 'Námestie SNP 484/25'
       city: 'Bratislava'
       country: 'Slovakia'
     site:
@@ -17,24 +19,24 @@ module.exports =
       
       # Styles
       styles: [
-        "/styles/bootstrap.css"
-        # "/styles/style.css"
-        "/styles/font-awesome-min.css"
-        "/styles/instant-style.css"
-        "/styles/ui-hover-effects.css"
-        "/styles/ui-buttons.css"
-        "/styles/schedule.css"
-        "/styles/sponsors.css"
-        "/styles/footer.css"
+        "styles/bootstrap.css"
+        # "styles/style.css"
+        "styles/font-awesome-min.css"
+        "styles/instant-style.css"
+        "styles/ui-hover-effects.css"
+        "styles/ui-buttons.css"
+        "styles/schedule.css"
+        "styles/sponsors.css"
+        "styles/footer.css"
       ]
 
       # Scripts
       scripts: [
-        "/vendor/jquery.js"
-        "/vendor/bootstrap.min.js"
-        "/scripts/main.js"
-        "/scripts/footerheight.js"
-        "/scripts/script.js"
+        "vendor/jquery.js"
+        "vendor/bootstrap.min.js"
+        "scripts/main.js"
+        "scripts/footerheight.js"
+        "scripts/script.js"
       ]
     sections: [
       'speakers'
@@ -46,56 +48,38 @@ module.exports =
     ]
     labels:
       about: 'About'
-      location: 'Location'
+      location: 'Locations'
       speakers: 'Speakers'
       program: 'Program'
       sponsors: 'Sponsors'
       partners: 'Partners'
       contact: 'Contact'
-    schedule: [
-      # {
-      #   time: '18.00'
-      #   description: 'Welcome'
-      # }
-      {
-        description: 'Special Guest | To be announced...'
-        time: '18.00 - 19.00'
-      }
-      {
-        description: 'Pau Garcia | Domestic Data Streamers'
-        time: '19.00 - 20.00'
-      }
-      {
-        description: 'Karsten Schmidt | Post Spectacular'
-        time: '20.00 - 21.00'
-      }
-    ]
     sponsors: [ 
       {
         name: 'Studio 727'
-        logo: '/images/sponsors/studio727.png'
+        logo: 'images/sponsors/studio727.png'
         url: 'http://www.727.sk/'
       }
       {
         name: 'Nethemba'
-        logo: '/images/sponsors/nethemba.png'
+        logo: 'images/sponsors/nethemba.png'
         url: 'https://nethemba.com/sk'
       }
     ]
     partners: [ 
       {
         name: 'Resonate'
-        logo: '/images/partners/resonate-wordmark.svg'
+        logo: 'images/partners/resonate-wordmark.svg'
         url: 'http://resonate.io/'
       }
       {
         name: 'Slovenská Národná Galéria'
-        logo: '/images/partners/logo-sng.svg'
+        logo: 'images/partners/logo-sng.svg'
         url: 'http://www.sng.sk'
       }
       {
         name: 'Lab'
-        logo: '/images/partners/logo-lab.svg'
+        logo: 'images/partners/logo-lab.svg'
         # url: '#'
       }
     ]
@@ -103,6 +87,10 @@ module.exports =
       '/themes/' + @site.theme
     getUrl: ->
       @site.url
+    getStylesFromFirstLevel: ->
+      ("../"+style for style in @site.styles) 
+    getScriptsFromFirstLevel: ->
+      ("../"+script for script in @site.scripts) 
   collections:
     speakers: ->
       @getCollection("html").findAllLive({relativeOutDirPath: 'speakers'}, [{time:1}]).on "add", (model) ->
