@@ -1,5 +1,7 @@
 /*
-* Replace all SVG images with inline SVG
+* Replace all SVG images (with .svg class) with inline SVG
+* So SVG contents can be targeted with CSS rules
+* http://stackoverflow.com/questions/11978995/how-to-change-color-of-svg-image-using-css-jquery-svg-image-replacement#11978996
 */
 jQuery('img.svg').each(function(){
     var $img = jQuery(this);
