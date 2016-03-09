@@ -32,7 +32,7 @@
   <div class="speaker">
 
     <%-@partial('instant-nav.html.eco', {showSections:false})%>
-    <%-@partial('instant-header.html.eco', {ShowCallToAction:@document.showCallToAction, title:@document.name, subtitle:@document.subtitle, subsubtitle:@document.subsubtitle, image:"../"+@document.image})%>
+    <%-@partial('instant-header.html.eco', {showCallToAction:@document.showCallToAction, title:@document.name, subtitle:@document.subtitle, subsubtitle:@document.subsubtitle, image:"../"+@document.image})%>
 
     <div id="content">
       <div class="container">

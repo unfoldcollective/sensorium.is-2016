@@ -34,7 +34,7 @@
 
   <div class="global">
     <%-@partial('instant-nav.html.eco', {showSections:true})%>
-    <%-@partial('instant-header.html.eco', {image:@document.image, showLogotype:true, title:@document.title, subtitle:@document.subtitle, subsubtitle:@document.datum, showCalltoaction:true})%>
+    <%-@partial('instant-header.html.eco', {image:@document.image, showLogotype:true, title:@document.title, subtitle:@document.subtitle, subsubtitle:@document.datum, showCallToAction:true})%>
 
     <!-- CONTENT -->
     <div id="content">
