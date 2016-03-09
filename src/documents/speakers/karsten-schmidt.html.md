@@ -1,5 +1,6 @@
 ---
 name: Karsten Schmidt
+thumbtext: Computational Designer & Artist
 <!-- subtitle: All the things! -->
 image: images/speakers/karsten-schmidt.jpg
 thumbnail: images/speakers/thumb-karsten-schmidt.png

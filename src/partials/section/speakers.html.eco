@@ -9,7 +9,7 @@
               <img src="<%= speaker.thumbnail %>" alt="img24"/>
               <figcaption>
                 <h2><%= speaker.name %></h2>
-                <p><%= speaker.title %></p>
+                <p><%= speaker.thumbtext %></p>
                 <a href="<%= speaker.url %>">View more</a>
               </figcaption>     
             </figure>

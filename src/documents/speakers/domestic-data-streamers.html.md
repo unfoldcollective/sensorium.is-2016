@@ -1,5 +1,6 @@
 ---
 name: Pau Garcia
+thumbtext: Creative Data Experiences @ Domestic Data Streamers
 subtitle: Domestic Data Streamers
 description: Pau Garcia | Domestic Data Streamers
 image: images/speakers/dds.jpg

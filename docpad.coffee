@@ -49,7 +49,7 @@ module.exports =
     labels:
       about: 'About'
       location: 'Locations'
-      speakers: 'Speakers'
+      speakers: 'Artists'
       program: 'Program'
       sponsors: 'Sponsors'
       partners: 'Partners'
