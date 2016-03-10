@@ -130,7 +130,6 @@ a.buttonlink {
    ========================================================================== */
 
 #headerwrap {
-	/*background: url(/images/speakers/karsten-schmidt.jpg) no-repeat center top;*/
 	margin-top: -70px;
 	padding-top: 200px;
 	text-align:center;
@@ -145,11 +144,44 @@ a.buttonlink {
     -o-background-size: 100%;
     background-size: 100%;
     */
+	
+	display: block;
+    position: relative;
+}
 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+/* semi transparent background image*/
+/* background dynamically inserted in instant-header template */
+#headerwrap::before {
+	/* provide default fall back image that will be overridden*/
+	background: url(/images/back.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	content: "";
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+
+	opacity: 0.8;
+  	z-index: -1;   
+}
+
+/*black background*/
+#headerwrap::after {
+	content: "";
+	background: black;
+
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+		
+  	z-index: -2;   
 }
 
 #headerwrap * {
