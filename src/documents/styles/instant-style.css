@@ -69,7 +69,8 @@ body {
 }
 
 body #content {
-	background: #FCDBD5; /*light pink*/
+	/*background: #FCDBD5;*/ /*light pink*/
+	background: linear-gradient(150deg, #FEE1CA, #FECAE2) center center fixed no-repeat;
 }
 
 h1, h2, h3, h4, h5, h6 {
