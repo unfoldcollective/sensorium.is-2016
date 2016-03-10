@@ -6,10 +6,10 @@ subtitle: A celebration of Art, Design and Technology
 datum: 19 April 2016
 showCallToAction: true
 ---
-<div class="container">
-	<% for section in @sections : %>
-	  <section class="<%= section %>" id="<%= section %>">
-	    <%- @partial("section/#{section}.html.eco", @) %>
-	  </section>
-	<% end %>
-</div>
+<% for section in @sections : %>
+  <section class="<%= section %>" id="<%= section %>">
+  	<div class="container">
+    	<%- @partial("section/#{section}.html.eco", @) %>
+  	</div>
+  </section>
+<% end %>
