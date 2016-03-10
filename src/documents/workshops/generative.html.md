@@ -12,15 +12,11 @@ time: 09.00 - 18.00
 showCallToAction: true
 ---
 
-## Generatívna skulptúra
-
 Workshop bude vedený oceňovaným komputatívnym umelcom Karstenom Schmidtom. Uskutoční sa v LABe - novom priestore pre digitálnu fabrikáciu, kde účastníci workshopu spolu-vytvoria modulárnu skulptúru. Workshop je vhodný pre začiatočníkov no pokročilejší dizajnér aleebo umelec sa naučí posúvať hranice svojej kreativity a zručností ďalej. 
 
 Tento workshop buduje na Karstenovom projekte a nástrojoch okolo thi.ng. Účastníci budú pracovať s rôznorodými materiálmi, technikami fabrikácie, laserovým rezačom a špeciálne vyvinutým softvérom. Workshop poskytne praktický prehľad a zručnosti v nástrojoch, technikách a prostredí výpočtových dizajnových praktík. Účastníci sa dozvedia a porozumejú tomu, ako dá kód a programovanie využiť kreatívne a ako používať techniky parametrického a generatívneho dizajnu a nástroje digitálnej fabrikácie. 
 
----
-
-## Generative Sculpture                
+---             
 
 The workshop will be facilitated by Karsten Schmidt, an award-winning computational artist and designer. During one day, participants will co-create a modular sculpture using custom software and techniques of digital fabrication. The workshop is suitable for beginners as well as more experienced designers or artists, who will benefit from being able to push the boundaries of their creativity.
 
