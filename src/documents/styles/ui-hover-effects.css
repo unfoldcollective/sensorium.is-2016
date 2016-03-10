@@ -18,9 +18,10 @@
 /* Common style */
 .hover-effect-grid figure {
 	position: relative;
-	float: left;
+	/*float: left;*/
 	overflow: hidden;
-	margin: 10px 1%;
+	/*margin: 10px 1%;*/
+	margin: 10px auto;
 	min-width: 320px;
 	max-width: 480px;
 	max-height: 360px;
