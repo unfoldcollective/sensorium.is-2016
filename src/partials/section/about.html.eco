@@ -1,4 +1,3 @@
-<!-- <h2 class="section-title"><%= @labels['about'] %></h2> -->
 <h2 class="section-title">O nás</h2>
 
 <p>Nechajte sa vtiahnuť do sveta dynamických a interaktívnych inštalácií, grafík, vizualizácií dát a generatívneho dizajnu. Medinárodne uznávaní umelci a dizajnéri využívajúci výpočtovú technológiu kreatívne sa stretnú v Bratislave, aby odprezentovali svoje projekty, procesy a myšlienky. Sensorium je prvým ročníkom jednej z najpokrokovejších vzdelávacích udalostí svojho druhu na Slovensku zameraných na prienik umenia, dizajnu a technológie.</p>
