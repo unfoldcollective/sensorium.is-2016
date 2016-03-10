@@ -18,12 +18,11 @@
   <meta property="og:url" content="<%= @site.url %>">
   <meta property="og:title" content="<%= @conf.name %>">
   <meta property="og:description" content="<%= @conf.description %>">
-  <meta property="og:image" content="<%= @getUrl() %>/<%= @getTheme() %>/img/badge.jpg">
+  <meta property="og:image" content="/images/favicons/sensorium-circle-300x300.png">
   <!-- / FACEBOOK -->
-
-  <link rel="shortcut icon" href="<%= @getTheme() %>/img/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" href="<%= @getTheme() %>/img/apple-touch-icon.png">
   
+  <!-- FAVICONS -->
+  <%-@partial('favicons.html.eco')%>
   <!-- Styles -->
   <%- @getBlock('styles').add(@getStylesFromFirstLevel()).toHTML() %>
 
