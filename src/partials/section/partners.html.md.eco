@@ -10,7 +10,7 @@
     <% else: %>
       <div class="partner-logo partner-link">
         <img src="<%= partner.logo %>" alt="<%= partner.name %>" class="photo" itemprop="image">
-      </div>  
+      </div>
     <% end %>
   </li>
   <% end %>
