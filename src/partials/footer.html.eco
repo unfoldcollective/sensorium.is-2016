@@ -4,7 +4,7 @@
       <div class="col-sm-4">
         <h4><b>SENSORIUM</b> is brought to you by</h4>
         <p>
-          <%-@partial('credits.html.eco')%>
+          <%-@partial('credits.html')%>
         </p>
       </div>
       
