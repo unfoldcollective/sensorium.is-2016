@@ -3,7 +3,7 @@ name: Karsten Schmidt
 thumbtext: Computational Artist & Designer
 subtitle: Computational Artist & Designer
 image: images/speakers/karsten-schmidt.jpg
-thumbnail: images/speakers/thumb-karsten-schmidt.png
+thumbnail: images/speakers/thumb-karsten-schmidt.jpg
 company: Post Spectacular
 description: Karsten Schmidt | Post Spectacular
 linkhref: http://postspectacular.com

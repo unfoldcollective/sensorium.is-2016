@@ -4,7 +4,7 @@ thumbtext: Creative Data Experiences @ Domestic Data Streamers
 subtitle: Domestic Data Streamers
 description: Pau Garcia | Domestic Data Streamers
 image: images/speakers/dds.jpg
-thumbnail: images/speakers/thumb-dds.png
+thumbnail: images/speakers/thumb-dds.jpg
 twitter: @domesticstream
 linkhref: http://domesticstreamers.com/
 linktext: domesticstreamers.com
