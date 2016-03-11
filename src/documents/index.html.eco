@@ -2,8 +2,8 @@
 layout: default
 title: SENSORIUM
 image: images/back.jpg
-subtitle: A celebration of Art, Design and Technology
-datum: 19 April 2016
+subtitle: The first Slovak conference making sense of creative technology
+datum: 19 April 2016 | Bratislava
 showCallToAction: true
 ---
 <% for section in @sections : %>
