@@ -9,7 +9,7 @@ showCallToAction: true
 <% for section in @sections : %>
   <section class="<%= section %>" id="<%= section %>">
   	<div class="container">
-    	<%- @partial("section/#{section}.html.eco", @) %>
+    	<%- @partial("section/#{section}.html.md.eco", @) %>
   	</div>
   </section>
 <% end %>

@@ -1,0 +1,60 @@
+<h2 class="section-title"><%= @labels['program'] %></h2>
+
+<h3>Workshop</h3>
+<h5>at LAB</h5>
+<div class="schedule-tbl">
+<table class="centeredblock">
+<tbody>
+  <% for workshop in @getCollection("workshops").toJSON(): %>
+  <tr>
+    <td class="col-1 schedule-time"><%= workshop.time %></td>
+    <td class="col-2 schedule-description"> <a href="<%=workshop.url%>"> <%= workshop.description %></a></td>
+  </tr>
+  <% end %>
+</tbody>
+</table>
+</div>
+<br>
+<a class="buttonlink" target="_blank" href="https://ti.to/sensorium-2016/sensorium-2016">
+  <button class="centeredblock button button--wayra button--border-medium button--text-upper button--size-s button--text-thick button--inverted">Get Tickets</button>
+</a>
+<br>
+
+<h3>Evening Program</h3>
+<h5>at Berlinka, SNG</h5>
+<div class="schedule-tbl">
+<table class="centeredblock">
+<tbody>
+  <tr>
+    <td class="col-1 schedule-time">18.00 - 18.10</td>
+    <td class="col-2 schedule-description">Welcome</td>
+  </tr>
+  <!-- SPEAKERS -->
+  <% for speaker in @getCollection("speakers").toJSON(): %>
+  <tr>
+    <td class="col-1 schedule-time"><%= speaker.time %></td>
+    <td class="col-2 schedule-description"> <a href="<%=speaker.url%>"> <%= speaker.description %></a></td>
+  </tr>
+  <% end %>
+
+  <!-- ACTIVITIES -->
+  <% for activity in @getCollection("activities").toJSON(): %>
+  <tr>
+    <td class="col-1 schedule-time"><%= activity.time %></td>
+    <td class="col-2 schedule-description"> <a href="<%=activity.url%>"> <%= activity.description %></a></td>
+  </tr>
+  <% end %>
+
+  <!-- AFTERPARTY -->
+  <tr>
+    <td class="col-1 schedule-time">21.00 - 22.30</td>
+    <td class="col-2 schedule-description"> Neo-swing Madness | <a href="https://www.facebook.com/Drappenmadchenfeller" target="_blank">DJ Matwe Drappenmadchenfeller </a></td>
+  </tr>
+
+</tbody>
+</table>
+</div>
+<br>
+<a class="buttonlink" target="_blank" href="https://ti.to/sensorium-2016/sensorium-2016">
+  <button class="centeredblock button button--wayra button--border-medium button--text-upper button--size-s button--text-thick button--inverted">Get Tickets</button>
+</a>

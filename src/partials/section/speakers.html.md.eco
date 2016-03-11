@@ -10,7 +10,7 @@
                 <h2><%= speaker.name %></h2>
                 <p><%= speaker.thumbtext %></p>
                 <a href="<%= speaker.url %>">View more</a>
-              </figcaption>     
+              </figcaption>
             </figure>
           </div>
       </li>
