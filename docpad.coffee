@@ -12,6 +12,8 @@ module.exports =
       address2: 'Námestie SNP 484/25'
       city: 'Bratislava'
       country: 'Slovakia'
+      logo: '/images/sensorium-circle.png'
+      logotype: '/images/sensorium2016-logo-teal.svg'
     site:
       theme: 'yellow-swan'
       url: 'http://sensorium.is'

@@ -113,6 +113,14 @@ p.intro {
 
 .navbar-brand {
 	font-weight: 700;
+	/* make sure the section links still fit next to logo img + text */
+	margin-right: -50px;
+}
+
+.navbar-brand svg, .navbar-brand img {
+	height: 100%;
+	margin-top: -3px;
+	margin-right: 10px;
 }
 
 .navbar-default .navbar-brand {

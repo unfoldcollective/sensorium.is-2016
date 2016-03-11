@@ -10,7 +10,7 @@
                 <span class="icon-bar"></span>
             </button>
         <% end %>
-        <a class="navbar-brand" href="/index.html">SENSORIUM</a>
+        <a class="navbar-brand" href="/index.html"><img src="<%= @conf.logo %>" alt="SENSORIUM">SENSORIUM</a>
     </div>
     <% if @showSections: %>
         <div class="navbar-collapse collapse">

@@ -17,7 +17,7 @@
   <meta property="og:url" content="<%= @site.url %>">
   <meta property="og:title" content="<%= @conf.name %>">
   <meta property="og:description" content="<%= @conf.description %>">
-  <meta property="og:image" content="/images/favicons/sensorium-circle-300x300.png">
+  <meta property="og:image" content="<%= @conf.logo %>">
   <!-- / FACEBOOK -->
   
   <!-- FAVICONS -->
