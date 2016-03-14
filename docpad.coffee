@@ -42,14 +42,6 @@ module.exports =
         "scripts/inlinesvg.js"
         # "scripts/script.js"
       ]
-    sections: [
-      'speakers'
-      'about'
-      'program'
-      'location'
-      'sponsors'
-      'partners'
-    ]
     labels:
       about: 'About'
       location: 'Locations'
@@ -58,37 +50,64 @@ module.exports =
       sponsors: 'Sponsors'
       partners: 'Partners'
       contact: 'Contact'
+    sections: [
+      {
+        title: 'speakers'
+        label: 'Artists'
+      }
+      {
+        title: 'about'
+        label: 'About'
+        multilang: true
+      }      
+      {
+        title: 'program'
+        label: 'Program'
+      }
+      {
+        title: 'location'
+        label: 'Locations'
+      }
+      {
+        title: 'sponsors'
+        label: 'Sponsors'
+      }
+      {
+        title: 'partners'
+        label: 'Partners'
+      }
+    ]
     sponsors: [ 
       {
         name: 'Studio 727'
-        logo: 'images/sponsors/studio727.png'
+        logo: '/images/sponsors/studio727.png'
         url: 'http://www.727.sk/'
       }
       {
         name: 'Nethemba'
-        logo: 'images/sponsors/nethemba.png'
+        logo: '/images/sponsors/nethemba.png'
         url: 'https://nethemba.com/sk'
       }
     ]
     partners: [ 
       {
         name: 'Resonate'
-        logo: 'images/partners/resonate-wordmark.svg'
+        logo: '/images/partners/resonate-wordmark.svg'
         url: 'http://resonate.io/'
       }
       {
         name: 'Slovenská Národná Galéria'
-        logo: 'images/partners/logo-sng.svg'
+        logo: '/images/partners/logo-sng.svg'
         url: 'http://www.sng.sk'
       }
       {
         name: 'Goethe Institut'
-        logo: 'images/partners/logo-goethe-institut.png'
+        logo: '/images/partners/logo-goethe-institut.png'
         url: 'https://www.goethe.de/en/index.html'
       }
       {
         name: 'Lab'
-        logo: 'images/partners/logo-lab.svg'
+        logo: '/images/partners/logo-lab.svg'
         # url: '#'
       }
     ]
@@ -99,18 +118,34 @@ module.exports =
       @site.url
     getStylesFromFirstLevel: ->
       ("../"+style for style in @site.styles) 
+    getStylesFromSecondLevel: ->
+      ("../../"+style for style in @site.styles) 
+    getStylesFromThirdLevel: ->
+      ("../../../"+style for style in @site.styles) 
     getScriptsFromFirstLevel: ->
       ("../"+script for script in @site.scripts) 
+    getScriptsFromSecondLevel: ->
+      ("../../"+script for script in @site.scripts) 
+    getScriptsFromThirdLevel: ->
+      ("../../../"+script for script in @site.scripts) 
     # sort function
     order: (a,b) ->
       b.order - a.order
+    getLeveledPath: (filePath) ->
+      if @document.lang is 'en' then '..'+filePath else '../..'+filePath
+    # getTranslatedUrl: (filePath) ->
+    #   if @document.lang is 'en' then '..'+filePath else '../..'+filePath
+  plugins:
+        multilang:
+            languages: ['en', 'sk']
+            defaultLanguage: 'en'
   collections:
     speakers: ->
-      @getCollection("html").findAllLive({relativeOutDirPath: 'speakers'}, [{time:1}]).on "add", (model) ->
+      @getCollection("html").findAllLive({relativeDirPath: 'speakers'}, [{time:1}]).on "add", (model) ->
         model.setMetaDefaults({layout:"speaker"})
     workshops: ->
-      @getCollection("html").findAllLive({relativeOutDirPath: 'workshops'}, [{time:1}]).on "add", (model) ->
+      @getCollection("html").findAllLive({relativeDirPath: 'workshops'}, [{time:1}]).on "add", (model) ->
         model.setMetaDefaults({layout:"speaker"})
     activities: ->
-      @getCollection("html").findAllLive({relativeOutDirPath: 'program'}, [{time:-1}]).on "add", (model) ->
+      @getCollection("html").findAllLive({relativeDirPath: 'program'}, [{time:-1}]).on "add", (model) ->
         model.setMetaDefaults({layout:"speaker"})

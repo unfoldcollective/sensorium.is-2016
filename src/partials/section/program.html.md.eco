@@ -5,7 +5,7 @@
 <div class="schedule-tbl">
 <table class="centeredblock">
 <tbody>
-  <% for workshop in @getCollection("workshops").toJSON(): %>
+  <% for workshop in @getCollection("workshops").findAll(lang:@document.lang).toJSON(): %>
   <tr>
     <td class="col-1 schedule-time"><%= workshop.time %></td>
     <td class="col-2 schedule-description"> <a href="<%=workshop.url%>"> <%= workshop.description %></a></td>
@@ -30,7 +30,7 @@
     <td class="col-2 schedule-description">Welcome</td>
   </tr>
   <!-- SPEAKERS -->
-  <% for speaker in @getCollection("speakers").toJSON(): %>
+  <% for speaker in @getCollection("speakers").findAll(lang:@document.lang).toJSON(): %>
   <tr>
     <td class="col-1 schedule-time"><%= speaker.time %></td>
     <td class="col-2 schedule-description"> <a href="<%=speaker.url%>"> <%= speaker.description %></a></td>
@@ -38,7 +38,7 @@
   <% end %>
 
   <!-- ACTIVITIES -->
-  <% for activity in @getCollection("activities").toJSON(): %>
+  <% for activity in @getCollection("activities").findAll(lang:@document.lang).toJSON(): %>
   <tr>
     <td class="col-1 schedule-time"><%= activity.time %></td>
     <td class="col-2 schedule-description"> <a href="<%=activity.url%>"> <%= activity.description %></a></td>

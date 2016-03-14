@@ -16,14 +16,19 @@
   <%-@partial('head-favicons.html.eco')%>
 
   <!-- Styles -->
-  <%- @getBlock('styles').add(@getStylesFromFirstLevel()).toHTML() %>
+  <%- @getBlock('styles').add(@getStylesFromThirdLevel()).toHTML() %>
 
 </head>
 <body>
   <div class="speaker">
 
     <%-@partial('nav.html.eco', {showSections:false})%>
-    <%-@partial('header.html.eco', {showCallToAction:@document.showCallToAction, title:@document.name, subtitle:@document.subtitle, subsubtitle:@document.subsubtitle, image:"../"+@document.image})%>
+        
+    <% if @document.lang != 'en': %>
+      <%-@partial('header.html.eco', {showCallToAction:@document.showCallToAction, title:@document.name, subtitle:@document.subtitle, subsubtitle:@document.subsubtitle, image:"../../.."+@document.image})%>
+    <% else: %>
+      <%-@partial('header.html.eco', {showCallToAction:@document.showCallToAction, title:@document.name, subtitle:@document.subtitle, subsubtitle:@document.subsubtitle, image:"../.."+@document.image})%>
+    <% end %>
 
     <div class="content" id="content">
       <div class="container">
@@ -51,8 +56,10 @@
   </div>
   <%-@partial('footer.html.eco')%>
   
-  <!-- <%- @getBlock("scripts").add(["/vendor/jquery.js"]).toHTML() %> -->
-  <%- @getBlock('scripts').add(@getScriptsFromFirstLevel()).toHTML() %>
+  <!-- Scripts -->
+  <%- @getBlock('scripts').add(@getScriptsFromThirdLevel()).toHTML() %>
+
+  
 
   <!-- GOOGLE ANALYTICS -->
   <script type="text/javascript">

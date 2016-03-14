@@ -1,0 +1,19 @@
+---
+layout: default
+title: SENSORIUM
+image: /images/back.jpg
+subtitle: The first Slovak conference making sense of creative technology
+datum: 19 April 2016 | Bratislava
+showCallToAction: true
+---
+<% for section in @sections : %>
+  <section class="<%= section.title %>" id="<%= section.title %>">
+    <div class="container">
+        <% if section.multilang: %>
+            <%- @partial("section/#{section.title}_#{@document.lang}.html.md.eco", @) %>
+        <% else: %>
+            <%- @partial("section/#{section.title}.html.md.eco", @) %>
+        <% end %>
+    </div>
+  </section>
+<% end %>

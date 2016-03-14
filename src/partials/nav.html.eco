@@ -17,7 +17,7 @@
           <ul class="nav navbar-nav navbar-right">
             <% for section in @sections : %>
               <li class="nav-item">
-                <a href="#<%= section %>" title="<%= @labels[section] %>" class="nav-link"><%= @labels[section] %></a>
+                <a href="#<%= section.title %>" title="<%= @labels[section.title] %>" class="nav-link"><%= @labels[section.title] %></a>
               </li>
             <% end %>
           </ul>
