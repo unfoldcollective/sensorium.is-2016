@@ -991,12 +991,12 @@ figure.effect-moses:hover img {
 /*---------------*/
 
 figure.effect-jazz {
-	background: -webkit-linear-gradient(-45deg, #0096AC 0%,#FCDBD5 100%);
-	background: linear-gradient(-45deg, #0096AC 0%,#FCDBD5 100%);
+	background: -webkit-linear-gradient(-45deg, #0096AC 0%,#000 100%);
+	background: linear-gradient(-45deg, #0096AC 0%,#000 100%);
 }
 
 figure.effect-jazz img {
-	opacity: 0.9;
+	opacity: 0.8;
 }
 
 figure.effect-jazz figcaption::after,
@@ -1043,7 +1043,7 @@ figure.effect-jazz p {
 }
 
 figure.effect-jazz:hover img {
-	opacity: 0.7;
+	opacity: 0.6;
 	-webkit-transform: scale3d(1.05,1.05,1);
 	transform: scale3d(1.05,1.05,1);
 }

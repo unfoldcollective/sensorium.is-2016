@@ -1,4 +1,4 @@
-<div class="row centered mt mb">
+<div class="row centered mt">
   <h2 class="section-title"><%= @labels['speakers'] %></h2>
   <ul class="speakers-list">
     <% for speaker in @getCollection("speakers").findAll(lang:@document.lang).sortArray(order:1): %>
