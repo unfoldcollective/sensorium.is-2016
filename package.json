@@ -12,6 +12,7 @@
     "docpad-plugin-less": "~2.4.1",
     "docpad-plugin-livereload": "~2.7.1",
     "docpad-plugin-marked": "~2.3.0",
+    "docpad-plugin-multilang": "~2.0.1",
     "docpad-plugin-partials": "~2.9.2"
   },
   "engines": {
