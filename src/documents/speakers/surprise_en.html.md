@@ -3,8 +3,8 @@ name: Surprise
 thumbtext: To be announced shortly... 
 subtitle: To be announced shortly... 
 description: Special Guest | To be announced...
-image: /images/speakers/dds.jpg
-thumbnail: /images/speakers/thumb-prekvapenie.png
+image: /images/speakers/surprise.jpg
+thumbnail: /images/speakers/thumb-surprise.jpg
 <!-- linkhref: http://Prekvapenie.sk -->
 <!-- linktext: @Prekvapenie -->
 order: 3
