@@ -1,5 +1,6 @@
 ---
 name: Generative Structures
+shortdescription: Learn designing for laser cutter and shaping geometry with algorythms
 subtitle: Full Day Workshop by Karsten Schmidt
 subsubtitle: 19.04.2016 | 09:00 - 18:00
 image: /images/program/karsten-schmidth-workshop.jpg
