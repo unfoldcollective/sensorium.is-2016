@@ -133,8 +133,11 @@ module.exports =
       b.order - a.order
     getLeveledPath: (filePath) ->
       if @document.lang is 'en' then '..'+filePath else '../..'+filePath
-    # getTranslatedUrl: (filePath) ->
-    #   if @document.lang is 'en' then '..'+filePath else '../..'+filePath
+    # localize url of document to language
+    localize: (doc, lang) ->
+      if doc.lang is lang then doc.url 
+      else if lang is 'en' then doc.url.split('sk/').join('') #return url without 'sk/'
+      else if lang is 'sk' then '/sk' + doc.url # insert sk
   plugins:
         multilang:
             languages: ['en', 'sk']

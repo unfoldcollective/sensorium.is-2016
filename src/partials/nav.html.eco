@@ -11,6 +11,11 @@
             </button>
         <% end %>
         <a class="navbar-brand" href="/index.html"><img src="<%= @conf.logo %>" alt="SENSORIUM">SENSORIUM</a>
+        <span class="navbar-brand navbar-lang">
+          <a class="<%= if @document.lang is 'en' then 'link-active' %>" href="<%= @localize(@document, 'en') %>">EN</a>
+          <span class="ui-nohover">|</span>
+          <a class="<%= if @document.lang is 'sk' then 'link-active' %>" href="<%= @localize(@document, 'sk') %>">SK</a>
+        </span>
     </div>
     <% if @showSections: %>
         <div class="navbar-collapse collapse">

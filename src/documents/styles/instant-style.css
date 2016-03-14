@@ -82,6 +82,10 @@ a {
 	color: #0096AC; // greenish blue
 }
 
+a.link-active {
+	border-bottom: 2px solid;
+}
+
 section {
 	padding: 1em;
 	text-align: center;
@@ -135,10 +139,25 @@ p.intro {
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
 	color: #0096AC;
 	background-color: transparent;
-	border-bottom: 2px solid #0096AC
+	border-bottom: 2px solid #0096AC;
 }
 
 .navbar-default .navbar-nav > li > a {
+	color: #0096AC;
+}
+
+.navbar-lang {
+	margin-left: 20px !important; 
+	font-weight: 100;
+	font-size: 14px;
+}
+
+.navbar-lang a:hover, .navbar-lang a:focus {
+	text-decoration: none;
+	border-bottom: 2px solid;
+}
+
+.navbar-lang:hover .ui-nohover{
 	color: #0096AC;
 }
 
