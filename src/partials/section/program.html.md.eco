@@ -8,7 +8,7 @@
   <% for workshop in @getCollection("workshops").findAll(lang:@document.lang).toJSON(): %>
   <tr>
     <td class="col-1 schedule-time"><%= workshop.time %></td>
-    <td class="col-2 schedule-description"> <a href="<%=workshop.url%>"> <%= workshop.description %></a></td>
+    <td class="col-2 schedule-description"> <a href="http://sensorium.is/workshops/generative/"> <%= workshop.description %></a></td>
   </tr>
   <% end %>
 </tbody>
