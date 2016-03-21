@@ -37,7 +37,7 @@ module.exports =
         "vendor/jquery.js"
         "vendor/bootstrap.min.js"
         "scripts/main.js"
-        "scripts/footerheight.js"
+        # "scripts/footerheight.js"
         "scripts/inlinesvg.js"
         # "scripts/script.js"
       ]
