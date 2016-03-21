@@ -147,7 +147,7 @@ p.intro {
 }
 
 .navbar-lang {
-	margin-left: 20px !important; 
+	margin-left: 30px !important; 
 	font-weight: 200;
 	font-size: 14px;
 }
@@ -161,9 +161,10 @@ p.intro {
 	color: #0096AC;
 }
 
-@media only screen and (max-width : 1000px) {
+@media only screen and (max-width : 992px) {
 	.navbar-default .navbar-nav > li > a {
-		margin: 0 10px;
+		margin: 0 0px;
+		padding: 15px 10px;
 	}
 }
 
