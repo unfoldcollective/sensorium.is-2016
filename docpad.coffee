@@ -108,7 +108,7 @@ module.exports =
       {
         name: 'Lab'
         logo: '/images/partners/logo-lab.svg'
-        # url: '#'
+        url: 'http://lab.cafe/'
       }
     ]
     # helper functions
