@@ -21,9 +21,8 @@ module.exports =
       
       # Styles
       styles: [
-        "styles/bootstrap.css"
-        # "styles/style.css"
-        "styles/font-awesome-min.css"
+        "vendor/bootstrap-min.css"
+        "vendor/font-awesome-min.css"
         "styles/instant-style.css"
         "styles/ui-hover-effects.css"
         "styles/ui-buttons.css"
