@@ -1,13 +1,28 @@
-<div id="headerwrap">
-<style type = "text/css" scoped>
-	#headerwrap::before { 
-		background: url(<%= @image %>) no-repeat center center fixed;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
+<script>
+	// dynamically insert semi-transparent header bg image as pseudo element
+	function addCSSRule(selector, rules) {
+		index = 0;
+		// Create a new style tag
+		var style = document.createElement("style");
+
+		// Append the style tag to head
+		document.head.appendChild(style);
+
+		// Grab the stylesheet object
+		sheet = style.sheet;
+
+		// Use addRule or insertRule to inject styles
+		if("insertRule" in sheet) {
+			sheet.insertRule(selector + "{" + rules + "}", index);
+		}
+		else if("addRule" in sheet) {
+			sheet.addRule(selector, rules, index);
+		}
 	}
-</style>
+	addCSSRule('#headerwrap::before', 'background: url(<%= @image %>) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;');
+</script>
+
+<div id="headerwrap">
     <div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2 white">
@@ -41,3 +56,4 @@
 		</div><!--/row -->
     </div> <!-- /container -->
 </div><!--/headerwrap -->
+
