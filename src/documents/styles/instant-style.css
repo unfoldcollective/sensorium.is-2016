@@ -68,6 +68,10 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
+body div.global {
+	width: 100%;
+}
+
 body #content {
 	/*background: #FCDBD5;*/ /*light pink*/
 	background: linear-gradient(150deg, #FEE1CA, #FECAE2) center center fixed no-repeat;
