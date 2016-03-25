@@ -35,21 +35,20 @@
 					<img class="svg" src="/images/sensorium2016-logo-white.svg" alt="Sensorium 2016">
 					<br><br>
 				<% else: %>
-					<h1><%=@title or ''%></h1>
+					<h1><%=@title if @title%></h1>
 				<% end %>
 				
-				<h3><%=@subtitle or ''%></h3>
+				<h3><%=@subtitle if @subtitle%></h3>
 
 				<% if @subsubtitle: %>
 				<p><%=@subsubtitle %></p>
-				<br>
 				<% else: %>
 				<br><br>
 				<% end %>
 				
 				<% if @showCallToAction: %>
 					<a class="buttonlink" target="_blank" href="https://ti.to/sensorium-2016/sensorium-2016">
-						<button class="centeredblock button button--wayra button--border-medium button--text-upper button--size-s button--text-thick button--inverted">Get Tickets</button>
+						<button class="button-earlybird centeredblock button button--wayra button--border-medium button--text-upper button--size-s button--text-thick button--inverted">Get Early Bird Tickets until 31 March!</button>
 					</a>
 				<% end %>
 			</div>

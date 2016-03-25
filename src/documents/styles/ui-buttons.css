@@ -16,7 +16,7 @@
 .button {
 	/* float: left;*/
 	min-width: 150px;
-	max-width: 250px;
+	/*max-width: 250px;*/
 	display: block;
 	margin: 1em;
 	padding: 1em 2em;
@@ -34,6 +34,10 @@
 }
 .button > span {
 	vertical-align: middle;
+}
+
+button.button-earlybird {
+  width: 300px;
 }
 
 /* Text color adjustments (we could stick to the "inherit" but that does not work well in Safari) */
@@ -220,8 +224,8 @@
 	height: 100%;
 	background: #37474f;
 	z-index: -1;
-	-webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
-	transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+	-webkit-transform: rotate3d(0, 0, 1, -55deg) translate3d(0, -3em, 0);
+	transform: rotate3d(0, 0, 1, -55deg) translate3d(0, -3em, 0);
 	-webkit-transform-origin: 0% 100%;
 	transform-origin: 0% 100%;
 	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s, background-color 0.3s;
