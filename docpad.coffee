@@ -30,6 +30,7 @@ module.exports =
         "styles/sponsors.css"
         "styles/footer.css"
         "styles/header.css"
+        "styles/layout-program.css"
       ]
 
       # Scripts
@@ -150,4 +151,4 @@ module.exports =
         model.setMetaDefaults({layout:"speaker"})
     activities: ->
       @getCollection("html").findAllLive({relativeDirPath: 'program'}, [{time:-1}]).on "add", (model) ->
-        model.setMetaDefaults({layout:"speaker"})
+        model.setMetaDefaults({layout:"program"})

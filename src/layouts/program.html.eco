@@ -1,0 +1,79 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/Event">
+<head>
+
+  <title itemprop="name"><%= @conf.name %></title>
+
+  <%- @getBlock("meta").toHTML() %>
+  <meta charset="utf-8">
+  <meta name="author" content="<%= @conf.name %>">
+  <meta name="description" content="<%= @conf.description %>">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  
+  <%-@partial('credits-comment.html')%>
+  <%-@partial('head-facebook.html')%>
+  <%-@partial('head-favicons.html.eco')%>
+
+  <!-- Styles -->
+  <%- @getBlock('styles').add(@getStylesFromThirdLevel()).toHTML() %>
+
+</head>
+<body>
+  <div class="program">
+
+    <%-@partial('nav.html.eco', {showSections:false})%>
+        
+    <% if @document.lang != 'en': %>
+      <%-@partial('header.html.eco', {showCallToAction:@document.showCallToAction, title:@document.name, subtitle:@document.subtitle, subsubtitle:@document.subsubtitle, image:"../../.."+@document.image})%>
+    <% else: %>
+      <%-@partial('header.html.eco', {showCallToAction:@document.showCallToAction, title:@document.name, subtitle:@document.subtitle, subsubtitle:@document.subsubtitle, image:"../.."+@document.image})%>
+    <% end %>
+
+    <div class="content" id="content">
+      <div class="container">
+        <div class="row mt mb">
+          <div class="col-lg-8 col-lg-offset-2">
+            <%- @content %>
+            <% if @document.twitter: %>
+              <p><i class="fa fa-twitter"></i> <a href="https://twitter.com/<%= @document.twitter %>" target="_blank"><%= @document.twitter %></a></p>
+            <% end %>
+            <% if @document.linkhref: %>
+              <p><i class="fa fa-link"></i> <a href="<%= @document.linkhref %>" target="_blank"><%= @document.linktext %></a></p>
+            <% end %>
+
+            <br>
+            <a class="buttonlink" target="_blank" href="https://ti.to/sensorium-2016/sensorium-2016">
+              <button class="button button--wayra button--border-medium button--text-upper button--size-s button--text-thick button--inverted">Get Tickets</button>
+            </a>
+
+          </div>
+
+        </div><!--/row -->
+      </div><!--/container -->
+    </div>
+
+  </div>
+  <%-@partial('footer.html.eco')%>
+  
+  <!-- Scripts -->
+  <%- @getBlock('scripts').add(@getScriptsFromThirdLevel()).toHTML() %>
+
+  
+
+  <!-- GOOGLE ANALYTICS -->
+  <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', '<%= @site.googleanalytics %>']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+  </script>
+  <!-- /GOOGLE ANALYTICS -->
+
+</body>
+</html>
