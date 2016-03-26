@@ -2,8 +2,14 @@
 
 <p class="intro">Nechajte sa vtiahnuť do sveta dynamických a interaktívnych inštalácií, grafík, vizualizácií dát a generatívneho dizajnu. Medzinárodne uznávaní umelci a dizajnéri využívajúci výpočtovú technológiu kreatívne sa stretnú v Bratislave, aby odprezentovali svoje projekty, procesy a myšlienky. Sensorium je prvým ročníkom jednej z najpokrokovejších vzdelávacích udalostí svojho druhu na Slovensku zameraných na prienik umenia, dizajnu a technológie.</p>
 
-Myšlienka podujatia Sensorium sa zrodila na festivale Resonate, ktorý spája významných, svetových umelcov, dizajnérov, výskumníkov a vzdelávateľov. Uchvátení úžasnými projektmi, ktoré sme videli a neuveritelne priateľskými lektormi, ktorí dokážu aj nemožné sme si povedali, že niečo z tejto atmosféry musíme priniesť aj domov - na Slovensko.
+<a><button class="toggletext-button button centeredblock" data-targetclass="toggletext-about" data-invtext="menej...">viac...</button></a>
 
-A tak sa tento rok nechajte uchvátiť vy sami programom Sensoria. Prinesieme do Bratislavy projekty využívajúce moderné technológie a nové médiá, no hlavne možnosť spoznajť zaujímavých umelcov a dizajnérov, ktorí pri svojej práci využívajú primárne výpočtovú techniku. Projekt je zameraný na tvorbu priestoru pre umelcov na prezentáciu ich diel prostrednícvom čoho chceme rozvíreniť debatu názorov, myšlienok a vízií spájajúcich technológiu a umenie.
+<div class="toggletext toggletext-about">
 
-Tešíme sa na vás!
+	<p>Myšlienka podujatia Sensorium sa zrodila na festivale Resonate, ktorý spája významných, svetových umelcov, dizajnérov, výskumníkov a vzdelávateľov. Uchvátení úžasnými projektmi, ktoré sme videli a neuveritelne priateľskými lektormi, ktorí dokážu aj nemožné sme si povedali, že niečo z tejto atmosféry musíme priniesť aj domov - na Slovensko.</p>
+
+	<p>A tak sa tento rok nechajte uchvátiť vy sami programom Sensoria. Prinesieme do Bratislavy projekty využívajúce moderné technológie a nové médiá, no hlavne možnosť spoznajť zaujímavých umelcov a dizajnérov, ktorí pri svojej práci využívajú primárne výpočtovú techniku. Projekt je zameraný na tvorbu priestoru pre umelcov na prezentáciu ich diel prostrednícvom čoho chceme rozvíreniť debatu názorov, myšlienok a vízií spájajúcich technológiu a umenie.</p>
+
+	<p>Tešíme sa na vás!</p>
+
+</div>

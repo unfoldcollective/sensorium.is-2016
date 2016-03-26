@@ -40,6 +40,7 @@ module.exports =
         "scripts/main.js"
         # "scripts/footerheight.js"
         "scripts/inlinesvg.js"
+        "scripts/toggletext.js"
         # "scripts/script.js"
       ]
     labels:
