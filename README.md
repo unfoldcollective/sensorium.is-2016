@@ -4,7 +4,7 @@
 
 ---
 
-![image](http://sensorium.is/images/sensorium-logo.svg)
+![image](http://sensorium.is/images/sensorium-circle.png)
 
 ## License
 
