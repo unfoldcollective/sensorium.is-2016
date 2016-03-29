@@ -17,7 +17,7 @@ module.exports =
     site:
       theme: 'yellow-swan'
       url: 'http://sensorium.is'
-      # googleanalytics: 'UA-33656081-1'
+      googleanalytics: 'UA-43863517-5'
       
       # Styles
       styles: [
