@@ -2,10 +2,9 @@ module.exports =
   prompts: false
   templateData:
     conf:
-      name: 'Sensorium 2016'
-      description: 'Sensorium festival is a celebration of art and science taking place in Bratislava'
+      name: 'Sensorium Conference 2016'
+      description: 'Sensorium conference is a first-of-its-kind celebration of art, design and new media technology in Bratislava, Slovakia. Immerse yourself in the world of interactive installations, dynamic data visualisations and generative design. The program includes a workshop by computational artist and designer Karsten Schmidt, an exhibition of interactive installations and talks from internationally established speakers who use computation in their creative practice.'
       date: 'April 19'
-      price: '€10'
       venue: 'Berlinka, Slovenská Národná Galéria'
       address: 'Námestie Ľudovíta Štúra 33/4'
       venue2: 'LAB'
