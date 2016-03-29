@@ -44,7 +44,7 @@
 
             <br>
             <a class="buttonlink" target="_blank" href="https://ti.to/sensorium-2016/sensorium-2016">
-              <button class="button button--wayra button--border-medium button--text-upper button--size-s button--text-thick button--inverted">Get Early Bird Tickets until 31 March!</button>
+              <button class="button-earlybird button button--wayra button--border-medium button--text-upper button--size-s button--text-thick button--inverted">Get Early Bird Tickets until 31 March!</button>
             </a>
 
           </div>
