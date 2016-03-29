@@ -1039,8 +1039,9 @@ figure.effect-jazz h2 {
 figure.effect-jazz p {
 	padding: 0.5em 2em;
 	text-transform: none;
-	font-size: 0.85em;
-	opacity: 0;
+	/*font-size: 0.85em;*/
+	font-size: 1em;
+	/*opacity: 0;*/
 }
 
 figure.effect-jazz:hover img {
