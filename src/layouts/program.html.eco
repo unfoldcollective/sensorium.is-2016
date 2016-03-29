@@ -2,7 +2,7 @@
 <html itemscope itemtype="http://schema.org/Event">
 <head>
 
-  <title itemprop="name"><%= @conf.name %></title>
+  <title itemprop="name"><%= @conf.name %> - The first Slovak conference making sense of creative technology</title>
 
   <%- @getBlock("meta").toHTML() %>
   <meta charset="utf-8">

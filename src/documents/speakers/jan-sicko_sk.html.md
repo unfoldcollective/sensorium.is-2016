@@ -2,7 +2,8 @@
 name: Ján Šicko
 thumbtext: New Media Artists @ DevKid
 subtitle: DevKid
-description: Ján Šicko | DevKid
+programDescription: Ján Šicko | DevKid
+description: Ján Šicko sa venuje tvorbe a výskumu vo sfére vizuálnej komunikácie a nových médií, od roku 2009 vo vlastnom DevKid Studio. Okrem profesionálnej práce v oblasti grafického dizajnu a nových medií vedie na Vysokej škole výtvarných umení v Bratislave MediaLab – laboratórium zamerané na skúmanie hraničých polôh grafického dizajnu. Jeho voľná tvorba sa pohybuje od animácie cez VJing, mapping k interaktívnym inštaláciám a počítačovým hrám.
 image: /images/speakers/jansicko.jpg
 thumbnail: /images/speakers/thumb-jansicko.jpg
 <!-- linkhref: http://Prekvapenie.sk -->

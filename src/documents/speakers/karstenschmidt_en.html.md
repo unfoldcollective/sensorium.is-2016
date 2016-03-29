@@ -4,8 +4,8 @@ thumbtext: Computational Artist & Designer
 subtitle: Computational Artist & Designer
 image: /images/speakers/karsten-schmidt.jpg
 thumbnail: /images/speakers/thumb-karsten-schmidt.jpg
-company: Post Spectacular
-description: Karsten Schmidt | Post Spectacular
+programDescription: Karsten Schmidt | Post Spectacular
+description: Karsten Schmidt is an award-winning London based computational designer and researcher merging code, design, art & craft skills. Originally from East Germany and starting in the deep end of the early 8-bit demo scene, for the past 25+ years he’s been adopting a completely trans-disciplinary way of working and has been laterally involved in a wide range of creative disciplines.
 linkhref: http://postspectacular.com
 linktext: Post Spectacular
 twitter: @toxi

@@ -5,7 +5,8 @@ subtitle: Computational Artist & Designer
 image: /images/speakers/karsten-schmidt.jpg
 thumbnail: /images/speakers/thumb-karsten-schmidt.jpg
 company: Post Spectacular
-description: Karsten Schmidt | Post Spectacular
+programDescription: Karsten Schmidt | Post Spectacular
+description: Karsten Schmidt je svetoznámy umelec a dizajnér, ktorý spája výpočtovú techniku s umením, dizajnom a remeslami. Pôvodom z východného nemecka, pôsobiaci v Londýne sa počas posledných +25 rokov zaoberá trans-disciplinárnym spôsobom práce.
 linkhref: http://postspectacular.com
 linktext: Post Spectacular
 twitter: @toxi

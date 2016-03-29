@@ -4,7 +4,8 @@ subtitle: Learn 3D design for laser cutter and shape geometry with algorithms
 subsubtitle: Full Day Workshop by Karsten Schmidt | 19.04.2016 09:00 - 18:00
 image: /images/program/karsten-schmidth-workshop.jpg
 thumbnail: /images/speakers/thumb-karsten-schmidt.png
-description: Workshop: Generative Structures | Karsten Schmidt
+programDescription: Workshop: Generative Structures | Karsten Schmidt
+description: Workshop bude vedený oceňovaným “computational” umelcom Karstenom Schmidtom. Uskutoční sa v LABe - novom priestore pre digitálnu fabrikáciu, kde účastníci workshopu spolu-vytvoria modulárnu skulptúru. Workshop je vhodný pre začiatočníkov ale aj pokročilejších dizajnérov alebo umelcov zaujímajúcich sa o posúvanie hraníc svojej kreativity a zručnosti.
 linkhref: http://thi.ng
 linktext: thi.ng
 twitter: @toxi

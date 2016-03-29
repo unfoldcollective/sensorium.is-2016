@@ -149,7 +149,7 @@ module.exports =
         model.setMetaDefaults({layout:"speaker"})
     workshops: ->
       @getCollection("html").findAllLive({relativeDirPath: 'workshops'}, [{time:1}]).on "add", (model) ->
-        model.setMetaDefaults({layout:"speaker"})
+        model.setMetaDefaults({layout:"program"})
     activities: ->
       @getCollection("html").findAllLive({relativeDirPath: 'program'}, [{time:-1}]).on "add", (model) ->
         model.setMetaDefaults({layout:"program"})

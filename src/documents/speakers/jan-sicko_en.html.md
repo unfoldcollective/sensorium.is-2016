@@ -2,11 +2,12 @@
 name: Ján Šicko
 thumbtext: New Media Artist @ DevKid
 subtitle: DevKid
-description: Ján Šicko | DevKid
+programDescription: Ján Šicko | DevKid
+description: Ján Šicko spends his time creating and researching the area of visual communication and new media in his own studio DevKid since 2009. Besides his professional work in the area of graphic design and new media he runs MediaLab - a laboratory focused on cutting-edge graphic design at the Academy of Fine Arts in Bratislava. His personal work extends from animation through VJing, mapping to interactive installations and computer games.
 image: /images/speakers/jansicko.jpg
 thumbnail: /images/speakers/thumb-jansicko.jpg
-<!-- linkhref: http://Prekvapenie.sk -->
-<!-- linktext: @Prekvapenie -->
+linkhref: http://devkid.com
+linktext: devkid.com
 order: 3
 time: 18.10 - 19.00
 ---
