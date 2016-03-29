@@ -41,6 +41,12 @@
   </tr>
   <% end %>
 
+  <!-- AFTERPARTY -->
+  <tr>
+    <td class="col-1 schedule-time">21.00 - 22.30</td>
+    <td class="col-2 schedule-description"> Neo-swing Madness | <a href="https://www.facebook.com/Drappenmadchenfeller" target="_blank">DJ Matwe Drappenmadchenfeller </a></td>
+  </tr>
+  
   <!-- ACTIVITIES -->
   <% for activity in @getCollection("activities").findAll(lang:@document.lang).toJSON(): %>
   <tr>
@@ -49,11 +55,6 @@
   </tr>
   <% end %>
 
-  <!-- AFTERPARTY -->
-  <tr>
-    <td class="col-1 schedule-time">21.00 - 22.30</td>
-    <td class="col-2 schedule-description"> Neo-swing Madness | <a href="https://www.facebook.com/Drappenmadchenfeller" target="_blank">DJ Matwe Drappenmadchenfeller </a></td>
-  </tr>
 
 </tbody>
 </table>
