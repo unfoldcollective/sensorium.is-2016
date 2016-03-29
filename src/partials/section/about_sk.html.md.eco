@@ -1,15 +1,27 @@
-<h2 class="section-title">O nás</h2>
+<div class="row">
+	<div class="col-md-7">
+		<h2 class="section-title">O nás</h2>
+		<p class="intro">Nechajte sa vtiahnuť do sveta dynamických a interaktívnych inštalácií, grafík, vizualizácií dát a generatívneho dizajnu. Medzinárodne uznávaní umelci a dizajnéri využívajúci výpočtovú technológiu kreatívne sa stretnú v Bratislave, aby odprezentovali svoje projekty, procesy a myšlienky. Sensorium je prvým ročníkom jednej z najpokrokovejších vzdelávacích udalostí svojho druhu na Slovensku zameraných na prienik umenia, dizajnu a technológie.</p>
 
-<p class="intro">Nechajte sa vtiahnuť do sveta dynamických a interaktívnych inštalácií, grafík, vizualizácií dát a generatívneho dizajnu. Medzinárodne uznávaní umelci a dizajnéri využívajúci výpočtovú technológiu kreatívne sa stretnú v Bratislave, aby odprezentovali svoje projekty, procesy a myšlienky. Sensorium je prvým ročníkom jednej z najpokrokovejších vzdelávacích udalostí svojho druhu na Slovensku zameraných na prienik umenia, dizajnu a technológie.</p>
+		<a><button class="toggletext-button button centeredblock" data-targetclass="toggletext-about" data-invtext="menej...">viac...</button></a>
 
-<a><button class="toggletext-button button centeredblock" data-targetclass="toggletext-about" data-invtext="menej...">viac...</button></a>
+		<div class="toggletext toggletext-about">
 
-<div class="toggletext toggletext-about">
+			<p>Myšlienka podujatia Sensorium sa zrodila na festivale Resonate, ktorý spája významných, svetových umelcov, dizajnérov, výskumníkov a vzdelávateľov. Uchvátení úžasnými projektmi, ktoré sme videli a neuveritelne priateľskými lektormi, ktorí dokážu aj nemožné sme si povedali, že niečo z tejto atmosféry musíme priniesť aj domov - na Slovensko.</p>
 
-	<p>Myšlienka podujatia Sensorium sa zrodila na festivale Resonate, ktorý spája významných, svetových umelcov, dizajnérov, výskumníkov a vzdelávateľov. Uchvátení úžasnými projektmi, ktoré sme videli a neuveritelne priateľskými lektormi, ktorí dokážu aj nemožné sme si povedali, že niečo z tejto atmosféry musíme priniesť aj domov - na Slovensko.</p>
+			<p>A tak sa tento rok nechajte uchvátiť vy sami programom Sensoria. Prinesieme do Bratislavy projekty využívajúce moderné technológie a nové médiá, no hlavne možnosť spoznajť zaujímavých umelcov a dizajnérov, ktorí pri svojej práci využívajú primárne výpočtovú techniku. Projekt je zameraný na tvorbu priestoru pre umelcov na prezentáciu ich diel prostrednícvom čoho chceme rozvíreniť debatu názorov, myšlienok a vízií spájajúcich technológiu a umenie.</p>
 
-	<p>A tak sa tento rok nechajte uchvátiť vy sami programom Sensoria. Prinesieme do Bratislavy projekty využívajúce moderné technológie a nové médiá, no hlavne možnosť spoznajť zaujímavých umelcov a dizajnérov, ktorí pri svojej práci využívajú primárne výpočtovú techniku. Projekt je zameraný na tvorbu priestoru pre umelcov na prezentáciu ich diel prostrednícvom čoho chceme rozvíreniť debatu názorov, myšlienok a vízií spájajúcich technológiu a umenie.</p>
+			<p>Tešíme sa na vás!</p>
 
-	<p>Tešíme sa na vás!</p>
-
+		</div>
+	</div>
+	<div class="col-md-5 bg-light">
+		<blockquote>
+			<span class="intro-big">Sensorium je už na začiatku svojej existencie vrcholovým príspevkom k rozvíjajúcej sa slovenskej scéne generatívneho dizajnu, digitálneho navrhovania a umenia najnovších médií. </span>
+			Zároveň je to prvý krát, kedy na Slovensko prichádzajú umelci formátu ako Karsten Schmidt, pôsobiaci v disciplínach na pomedzí programovania, grafického dizajnu, vizuálneho, priestorového a interaktívneho umenia.
+		</blockquote>
+		<p>
+			- Ján Pernecký | <a href="http://grasshopper.rese-arch.org/"><span class="rese">rese arch</span></a>
+		</p>
+	</div>
 </div>
