@@ -142,6 +142,11 @@ module.exports =
         multilang:
             languages: ['en', 'sk']
             defaultLanguage: 'en'
+        moment:
+          formats: [
+            {raw: 'date', format: 'MMMM Do YYYY', formatted: 'humanDate'}
+            {raw: 'date', format: 'YYYY-MM-DD', formatted: 'computerDate'}
+          ]
   collections:
     speakers: ->
       @getCollection("html").findAllLive({relativeDirPath: 'speakers'}, [{time:1}]).on "add", (model) ->
