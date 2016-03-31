@@ -30,6 +30,7 @@ module.exports =
         "/styles/footer.css"
         "/styles/header.css"
         "/styles/layout-program.css"
+        "/styles/layout-speaker.css"
       ]
 
       # Scripts
@@ -121,7 +122,7 @@ module.exports =
     getStylesFromSecondLevel: ->
       ("../../"+style for style in @site.styles) 
     getStylesFromThirdLevel: ->
-      ("../../../"+style for style in @site.styles) 
+      ("../../../"+style for style in @site.styles)
     getScriptsFromFirstLevel: ->
       ("../"+script for script in @site.scripts) 
     getScriptsFromSecondLevel: ->
