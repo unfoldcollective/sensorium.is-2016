@@ -154,6 +154,9 @@ module.exports =
     workshops: ->
       @getCollection("html").findAllLive({relativeDirPath: 'workshops'}, [{time:1}]).on "add", (model) ->
         model.setMetaDefaults({layout:"program"})
+    posts: ->
+      @getCollection("html").findAllLive({relativeDirPath: 'posts', isPost:true}, [{time:1}]).on "add", (model) ->
+        model.setMetaDefaults({layout:"program"})
     activities: ->
       @getCollection("html").findAllLive({relativeDirPath: 'program'}, [{time:-1}]).on "add", (model) ->
         model.setMetaDefaults({layout:"program"})

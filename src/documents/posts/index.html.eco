@@ -1,0 +1,13 @@
+---
+layout: program
+title: Posts
+subtitle: check out some recent posts
+image: /images/posts/bg-posts.jpg
+singleLang: true
+---
+
+<% for post in @getCollection("posts").toJSON(): %>
+<ul>
+	<li><span class="label label-default"><%= post.humanDate %></span> &nbsp; <a href="<%=post.url %>"><%= post.title %></a></li>
+</ul>
+<% end %>
