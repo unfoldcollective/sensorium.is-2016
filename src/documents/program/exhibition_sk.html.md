@@ -1,5 +1,5 @@
 ---
-name: Exhibition
+title: Exhibition
 <!-- subtitle:  -->
 image: /images/program/exhibition.jpg
 thumbnail: /images/program/exhibition.jpg
