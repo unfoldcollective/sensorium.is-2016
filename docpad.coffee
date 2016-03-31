@@ -20,26 +20,26 @@ module.exports =
       
       # Styles
       styles: [
-        "vendor/bootstrap-min.css"
-        "vendor/font-awesome-min.css"
-        "styles/instant-style.css"
-        "styles/ui-hover-effects.css"
-        "styles/ui-buttons.css"
-        "styles/schedule.css"
-        "styles/sponsors.css"
-        "styles/footer.css"
-        "styles/header.css"
-        "styles/layout-program.css"
+        "/vendor/bootstrap-min.css"
+        "/vendor/font-awesome-min.css"
+        "/styles/instant-style.css"
+        "/styles/ui-hover-effects.css"
+        "/styles/ui-buttons.css"
+        "/styles/schedule.css"
+        "/styles/sponsors.css"
+        "/styles/footer.css"
+        "/styles/header.css"
+        "/styles/layout-program.css"
       ]
 
       # Scripts
       scripts: [
-        "vendor/jquery.js"
-        "vendor/bootstrap.min.js"
-        "scripts/main.js"
+        "/vendor/jquery.js"
+        "/vendor/bootstrap.min.js"
+        "/scripts/main.js"
         # "scripts/footerheight.js"
-        "scripts/inlinesvg.js"
-        "scripts/toggletext.js"
+        "/scripts/inlinesvg.js"
+        "/scripts/toggletext.js"
         # "scripts/script.js"
       ]
     labels:

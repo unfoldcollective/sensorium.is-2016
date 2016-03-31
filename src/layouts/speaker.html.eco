@@ -16,7 +16,7 @@
   <%-@partial('head-favicons.html.eco')%>
 
   <!-- Styles -->
-  <%- @getBlock('styles').add(@getStylesFromThirdLevel()).toHTML() %>
+  <%- @getBlock('styles').add(@site.styles).toHTML() %>
 
 </head>
 <body>
@@ -57,7 +57,7 @@
   <%-@partial('footer.html.eco')%>
   
   <!-- Scripts -->
-  <%- @getBlock('scripts').add(@getScriptsFromThirdLevel()).toHTML() %>
+  <%- @getBlock('scripts').add(@site.scripts).toHTML() %>
   <!-- Google Analytics -->
   <%-@partial('googleanalytics.html.eco')%>
 
