@@ -26,6 +26,7 @@ module.exports =
         "/styles/ui-hover-effects.css"
         "/styles/ui-buttons.css"
         "/styles/schedule.css"
+        "/styles/news.css"
         "/styles/sponsors.css"
         "/styles/footer.css"
         "/styles/header.css"
@@ -45,6 +46,7 @@ module.exports =
       ]
     labels:
       about: 'About'
+      news: 'News'
       location: 'Locations'
       speakers: 'Artists'
       program: 'Program'
@@ -52,6 +54,10 @@ module.exports =
       partners: 'Partners'
       contact: 'Contact'
     sections: [
+      {
+        title: 'news'
+        label: 'News'
+      }
       {
         title: 'speakers'
         label: 'Artists'
