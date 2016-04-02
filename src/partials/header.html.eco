@@ -47,7 +47,7 @@
 				<% end %>
 				
 				<% if @showCallToAction: %>
-					<%-@partial('button-tickets.html.eco')%>
+					<%-@partial('button-tickets.html')%>
 				<% end %>
 			</div>
 		</div><!--/row -->

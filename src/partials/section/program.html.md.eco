@@ -1,62 +1,63 @@
-<h2 class="section-title"><%= @labels['program'] %></h2>
+    <h2 class="section-title"><%= @labels['program'] %></h2>
+    
+    <h3>Workshop</h3>
+    <h5>at LAB</h5>
+    <div class="schedule-tbl">
+    <table class="centeredblock">
+    <tbody>
+      <% for workshop in @getCollection("workshops").findAll(lang:@document.lang).toJSON(): %>
+      <tr>
+        <td class="col-1 schedule-time"><%= workshop.time %></td>
+        <td class="col-2 schedule-description"> <a href="http://sensorium.is/workshops/generative/"> <%= workshop.programDescription %></a></td>
+      </tr>
+      <% end %>
+    </tbody>
+    </table>
+    </div>
+    <br>
 
-<h3>Workshop</h3>
-<h5>at LAB</h5>
-<div class="schedule-tbl">
-<table class="centeredblock">
-<tbody>
-  <% for workshop in @getCollection("workshops").findAll(lang:@document.lang).toJSON(): %>
-  <tr>
-    <td class="col-1 schedule-time"><%= workshop.time %></td>
-    <td class="col-2 schedule-description"> <a href="http://sensorium.is/workshops/generative/"> <%= workshop.programDescription %></a></td>
-  </tr>
-  <% end %>
-</tbody>
-</table>
-</div>
-<br>
+    <%-@partial('button-tickets.html')%>
 
-<%-@partial('button-tickets.html.eco')%>
+    *Are you a student? Email <a href="mailto:sensorium2016@gmail.com">sensorium2016@gmail.com</a> to receive a student discount code
 
-*Are you a student? Email <a href="mailto:sensorium2016@gmail.com">sensorium2016@gmail.com</a> to receive a student discount code
+    <br>
 
-<br>
+    <h3>Evening Program</h3>
+    <h5>at Berlinka, SNG</h5>
+    <div class="schedule-tbl">
+    <table class="centeredblock">
+    <tbody>
+      <tr>
+        <td class="col-1 schedule-time">18.00 - 18.10</td>
+        <td class="col-2 schedule-description">Welcome</td>
+      </tr>
+      <!-- SPEAKERS -->
+      <% for speaker in @getCollection("speakers").findAll(lang:@document.lang).toJSON(): %>
+      <tr>
+        <td class="col-1 schedule-time"><%= speaker.time %></td>
+        <td class="col-2 schedule-description"> <a href="<%=speaker.url%>"> <%= speaker.programDescription %></a></td>
+      </tr>
+      <% end %>
 
-<h3>Evening Program</h3>
-<h5>at Berlinka, SNG</h5>
-<div class="schedule-tbl">
-<table class="centeredblock">
-<tbody>
-  <tr>
-    <td class="col-1 schedule-time">18.00 - 18.10</td>
-    <td class="col-2 schedule-description">Welcome</td>
-  </tr>
-  <!-- SPEAKERS -->
-  <% for speaker in @getCollection("speakers").findAll(lang:@document.lang).toJSON(): %>
-  <tr>
-    <td class="col-1 schedule-time"><%= speaker.time %></td>
-    <td class="col-2 schedule-description"> <a href="<%=speaker.url%>"> <%= speaker.programDescription %></a></td>
-  </tr>
-  <% end %>
-
-  <!-- AFTERPARTY -->
-  <tr>
-    <td class="col-1 schedule-time">21.00 - 22.30</td>
-    <td class="col-2 schedule-description"> Neo-swing Madness | <a href="https://www.facebook.com/Drappenmadchenfeller" target="_blank">DJ Matwe Drappenmadchenfeller </a></td>
-  </tr>
-  
-  <!-- ACTIVITIES -->
-  <% for activity in @getCollection("activities").findAll(lang:@document.lang).toJSON(): %>
-  <tr>
-    <td class="col-1 schedule-time"><%= activity.time %></td>
-    <td class="col-2 schedule-description"> <a href="<%=activity.url%>"> <%= activity.programDescription %></a></td>
-  </tr>
-  <% end %>
+      <!-- AFTERPARTY -->
+      <tr>
+        <td class="col-1 schedule-time">21.00 - 22.30</td>
+        <td class="col-2 schedule-description"> Neo-swing Madness | <a href="https://www.facebook.com/Drappenmadchenfeller" target="_blank">DJ Matwe Drappenmadchenfeller </a></td>
+      </tr>
+      
+      <!-- ACTIVITIES -->
+      <% for activity in @getCollection("activities").findAll(lang:@document.lang).toJSON(): %>
+      <tr>
+        <td class="col-1 schedule-time"><%= activity.time %></td>
+        <td class="col-2 schedule-description"> <a href="<%=activity.url%>"> <%= activity.programDescription %></a></td>
+      </tr>
+      <% end %>
 
 
-</tbody>
-</table>
-</div>
-<br>
+    </tbody>
+    </table>
+    </div>
+    <br>
 
-<%-@partial('button-tickets.html.eco')%>
+    <%-@partial('button-tickets.html')%>
+
