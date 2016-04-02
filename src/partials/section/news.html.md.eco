@@ -1,4 +1,4 @@
-<div class="section-part-news">
+<div class="section-part-news mt">
   <h2 class="section-title">News</h2>
   <% for post in @getCollection("posts").toJSON(): %>
   <ul>
