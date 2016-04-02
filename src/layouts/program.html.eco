@@ -20,7 +20,7 @@
 
 </head>
 <body>
-  <div class="program">
+  <div class="layout-program">
 
     <%-@partial('nav.html.eco', {showSections:false})%>
         
