@@ -57,13 +57,22 @@
    General styles
    ========================================================================== */
 
+.bg-gradient {
+	/*https://color.adobe.com/create/color-wheel/?base=2&rule=Analogous&selected=4&name=My%20Color%20Theme&mode=rgb&rgbvalues=0.9947712418300654,0.7951651794758344,0.5985973909076422,0.8982352941176471,0.6315190125322595,0.5313118279341073,0.9882352941176471,0.6516859409305555,0.6339591588966488,0.8982352941176471,0.45839163698328816,0.7193236875612449,0.9223873894245979,0.624122012823701,0.9947712418300654&swatchOrder=0,1,2,3,4*/
+	background-color: #FCDBD5;
+    background: -moz-linear-gradient(300deg, #FED097 0%, #FEAFBF 100%) center center fixed no-repeat; /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #FED097), color-stop(100%, #FEAFBF)) center center fixed no-repeat; /* safari4+,chrome */
+    background: -webkit-linear-gradient(300deg, #FED097 0%, #FEAFBF 100%) center center fixed no-repeat; /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(300deg, #FED097 0%, #FEAFBF 100%) center center fixed no-repeat; /* opera 11.10+ */
+    background: -ms-linear-gradient(300deg, #FED097 0%, #FEAFBF 100%) center center fixed no-repeat; /* ie10+ */
+    background: linear-gradient(150deg, #FED097 0%, #FEAFBF 100%) center center fixed no-repeat; /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FED097', endColorstr='#FEAFBF',GradientType=0 ); /* ie6-9 */
+}
 
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    background: #FCDBD5; /*light pink*/
-
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
 }
@@ -72,14 +81,9 @@ body div.global {
 	width: 100%;
 }
 
-body #content {
-	/*background: #FCDBD5;*/ /*light pink*/
-	background: linear-gradient(150deg, #FEE1CA, #FECAE2) center center fixed no-repeat;
-}
-
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
-    color: #4a4a4a;
+    /*color: #4a4a4a;*/
 }
 
 a {

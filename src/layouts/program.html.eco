@@ -19,8 +19,8 @@
   <%- @getBlock('styles').add(@site.styles).toHTML() %>
 
 </head>
-<body>
-  <div class="layout-program">
+<body class="bg-gradient">
+  <div class="layout-program global">
 
     <%-@partial('nav.html.eco', {showSections:false})%>
         

@@ -19,8 +19,8 @@
   <%- @getBlock('styles').add(@site.styles).toHTML() %>
 
 </head>
-<body>
-  <div class="speaker">
+<body class="bg-gradient">
+  <div class="layout-speaker global">
 
     <%-@partial('nav.html.eco', {showSections:false})%>
         
