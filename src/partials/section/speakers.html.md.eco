@@ -1,19 +1,17 @@
-<div class="row centered">
-  <h2 class="section-title"><%= @labels['speakers'] %></h2>
-  <ul class="speakers-list">
-    <% for speaker in @getCollection("speakers").findAll(lang:@document.lang).sortArray(order:1): %>
-      <li class="col-lg-4 col-md-4 col-sm-6 gallery">
-          <div class="hover-effect-grid">
-            <figure class="effect-jazz">
-              <img src="<%= speaker.thumbnail %>" alt="img24"/>
-              <figcaption>
-                <h2><%= speaker.name %></h2>
-                <p><%= speaker.thumbtext %></p>
-                <a href="<%= speaker.url %>">View more</a>
-              </figcaption>
-            </figure>
-          </div>
-      </li>
-    <% end %>
-  </ul>
-</div>
+<h2 class="section-title"><%= @labels['speakers'] %></h2>
+<ul class="speakers-list">
+  <% for speaker in @getCollection("speakers").findAll(lang:@document.lang).sortArray(order:1): %>
+    <li class="gallery">
+        <div class="hover-effect-grid">
+          <figure class="effect-jazz">
+            <img src="<%= speaker.thumbnail %>" alt="img24"/>
+            <figcaption>
+              <h2><%= speaker.name %></h2>
+              <p><%= speaker.thumbtext %></p>
+              <a href="<%= speaker.url %>">View more</a>
+            </figcaption>
+          </figure>
+        </div>
+    </li>
+  <% end %>
+</ul>

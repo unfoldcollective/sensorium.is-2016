@@ -9,7 +9,7 @@
 	position: relative;
 	clear: both;
 	margin: 0 auto;
-	padding: 1em 0 4em;
+	padding: 1em 0 1em;
 	max-width: 1000px;
 	list-style: none;
 	text-align: center;
@@ -23,9 +23,9 @@
 	/*margin: 10px 1%;*/
 	margin: 10px auto;
 	min-width: 300px;
-	max-width: 480px;
+	max-width: 465px;
 	max-height: 360px;
-	width: 48%;
+	width: 80%;
 	height: auto;
 	background: #3085a3;
 	text-align: center;
@@ -1267,7 +1267,7 @@ figure.effect-duke:hover p {
 }
 
 /* Media queries */
-@media screen and (max-width: 50em) {
+@media screen and (max-width: 992px) {
 	.content {
 		padding: 0 10px;
 		text-align: center;

@@ -27,6 +27,7 @@ module.exports =
         "/styles/ui-buttons.css"
         "/styles/schedule.css"
         "/styles/news.css"
+        "/styles/speakers.css"
         "/styles/sponsors.css"
         "/styles/footer.css"
         "/styles/header.css"
