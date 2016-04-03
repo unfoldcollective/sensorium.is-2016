@@ -24,9 +24,11 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <% for section in @sections : %>
-              <li class="nav-item">
-                <a href="#<%= section.title %>" title="<%= @labels[section.title] %>" class="nav-link"><%= @labels[section.title] %></a>
-              </li>
+              <% if not section.notInNav: %>
+                <li class="nav-item">
+                  <a href="#<%= section.title %>" title="<%= @labels[section.title] %>" class="nav-link"><%= @labels[section.title] %></a>
+                </li>
+              <% end %>
             <% end %>
           </ul>
         </div> 

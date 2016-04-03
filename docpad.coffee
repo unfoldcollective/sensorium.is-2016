@@ -79,10 +79,12 @@ module.exports =
       {
         title: 'sponsors'
         label: 'Sponsors'
+        notInNav: true
       }
       {
         title: 'partners'
         label: 'Partners'
+        notInNav: true
       }
     ]
     sponsors: [ 
