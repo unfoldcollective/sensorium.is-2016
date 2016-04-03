@@ -159,12 +159,16 @@ module.exports =
     speakers: ->
       @getCollection("html").findAllLive({relativeDirPath: 'speakers'}, [{time:1}]).on "add", (model) ->
         model.setMetaDefaults({layout:"speaker"})
+        model.setMetaDefaults({isLive:true})
     workshops: ->
       @getCollection("html").findAllLive({relativeDirPath: 'workshops'}, [{time:1}]).on "add", (model) ->
         model.setMetaDefaults({layout:"program"})
+        model.setMetaDefaults({isLive:true})
     posts: ->
       @getCollection("html").findAllLive({relativeDirPath: 'posts', isPost:true}, [{time:1}]).on "add", (model) ->
         model.setMetaDefaults({layout:"program"})
+        model.setMetaDefaults({isLive:true})
     activities: ->
       @getCollection("html").findAllLive({relativeDirPath: 'program'}, [{time:-1}]).on "add", (model) ->
         model.setMetaDefaults({layout:"program"})
+        model.setMetaDefaults({isLive:true})
