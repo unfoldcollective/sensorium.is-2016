@@ -1,6 +1,6 @@
 ---
 layout: program
-title: Early Bird Tickets All Gone!
+title: Early Bird Tickets All Gone! Regular tickets still available.
 <!-- subtitle: Talking inspiration, metaphors and physical data experiences -->
 image: /images/posts/early-birds.jpg
 isPost: true
