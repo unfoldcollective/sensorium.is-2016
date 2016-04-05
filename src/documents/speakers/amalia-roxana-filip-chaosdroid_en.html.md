@@ -1,5 +1,4 @@
 ---
-isLive: false
 name: Amalia Roxana Filip 
 thumbtext: aka chaosdroid, visual artist
 subtitle: aka chaosdroid, visual artist
