@@ -9,7 +9,7 @@ thumbnail: /images/speakers/thumb-dds.jpg
 twitter: @domesticstream
 linkhref: http://domesticstreamers.com/
 linktext: domesticstreamers.com
-time: 19.10 - 20.00
+time: 19.10 - 20.10
 order: 2
 ---
 
