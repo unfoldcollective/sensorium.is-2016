@@ -28,8 +28,12 @@
 <table class="centeredblock">
 <tbody>
   <tr>
-    <td class="col-1 schedule-time">18.00 - 18.10</td>
-    <td class="col-2 schedule-description">Welcome</td>
+    <td class="col-1 schedule-time">17.30 - 17.45</td>
+    <td class="col-2 schedule-description">Registration</td>
+  </tr>
+  <tr>
+    <td class="col-1 schedule-time">17.45 - 18.00</td>
+    <td class="col-2 schedule-description">Welcome by lab.SNG</td>
   </tr>
   <!-- SPEAKERS -->
   <% for speaker in @getCollection("speakers").findAll({lang:@document.lang, isLive:true}).toJSON(): %>

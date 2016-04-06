@@ -10,7 +10,7 @@ description: Karsten Schmidt je svetoznámy umelec a dizajnér, ktorý spája v�
 linkhref: http://postspectacular.com
 linktext: Post Spectacular
 twitter: @toxi
-time: 20.10 - 21.00
+time: 20.20 - 21.20
 order: 1
 ---
 
