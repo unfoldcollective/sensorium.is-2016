@@ -15,7 +15,7 @@ image3: /images/program/miriam.jpg
 
 Do Berlinky vám okrem zaujímavých zahraničných hostí prinesieme aj diela mladých slovenských umelcov pracujúcich s novými médiami. Môžete sa tešiť na dynamické inštalácie ako aj ich tvorcov, ktorí vám odpovedia na všetky otázky.
 
-## **Turbines** - Jonathan Ravasz
+## **Turbynes** - Jonathan Ravasz
 
 <img src="http://sensorium.is/images/program/jonathan.jpg" class="img-responsive" alt="Turbines">
 
