@@ -51,8 +51,10 @@
               <p><i class="fa fa-link"></i> <a href="<%= @document.linkhref %>" target="_blank"><%= @document.linktext %></a></p>
             <% end %>
 
-            <br>
-            <%-@partial('button-tickets.html')%>
+            <% if !@document.noButton: %>
+              <br>
+              <%-@partial('button-tickets.html')%>
+            <% end %>
 
           <% if !@document.fullWidth: %>
             </div>

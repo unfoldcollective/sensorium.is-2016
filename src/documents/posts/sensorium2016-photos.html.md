@@ -6,6 +6,7 @@ image: /images/photos/sensorium2016/sensorium-photo-03.JPG
 isPost: true
 usesImageGallery: true
 fullWidth: true
+noButton: true
 singleLang: true
 date: 2016-05-01
 ---
@@ -77,10 +78,13 @@ date: 2016-05-01
         <a class="thumbnail" href="/images/photos/sensorium2016/sensorium-photo-12.JPG" title="Sensorium 2016" data-dialog>
             <img class="img-responsive" src="/images/photos/sensorium2016/sensorium-400x259-12.JPG" alt="Sensorium Photo">
         </a>
-    </div>
+    </div>    
+</div>
 
-
-    
+<div class="row centered">
+	<div class="col-lg-8 col-lg-offset-2">
+		<p><a target="_blank" href="https://www.facebook.com/media/set/?set=a.1682199892033197.1073741833.1664748060445047&type=3">more photos on Facebook...</a></p>
+	</div>
 </div>
 
 <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
@@ -93,26 +97,3 @@ date: 2016-05-01
     <a class="play-pause"></a>
     <ol class="indicator"></ol>
 </div>
-
-<!-- 
-<img src="/images/photos/sensorium2016/sensorium-photo-01.JPG" class="img-responsive" alt="Sensorium Photo 01">
-
-<img src="/images/photos/sensorium2016/sensorium-photo-02.JPG" class="img-responsive" alt="Sensorium Photo 02">
-
-<img src="/images/photos/sensorium2016/sensorium-photo-04.JPG" class="img-responsive" alt="Sensorium Photo 04">
-
-<img src="/images/photos/sensorium2016/sensorium-photo-05.JPG" class="img-responsive" alt="Sensorium Photo 05">
-
-<img src="/images/photos/sensorium2016/sensorium-photo-06.JPG" class="img-responsive" alt="Sensorium Photo 06">
-
-<img src="/images/photos/sensorium2016/sensorium-photo-07.JPG" class="img-responsive" alt="Sensorium Photo 07">
-
-<img src="/images/photos/sensorium2016/sensorium-photo-08.JPG" class="img-responsive" alt="Sensorium Photo 08">
-
-<img src="/images/photos/sensorium2016/sensorium-photo-09.JPG" class="img-responsive" alt="Sensorium Photo 09">
-
-<img src="/images/photos/sensorium2016/sensorium-photo-10.JPG" class="img-responsive" alt="Sensorium Photo 10">
-
-<img src="/images/photos/sensorium2016/sensorium-photo-11.JPG" class="img-responsive" alt="Sensorium Photo 11">
-
-<img src="/images/photos/sensorium2016/sensorium-photo-12.JPG" class="img-responsive" alt="Sensorium Photo 12"> -->
