@@ -7,7 +7,7 @@
   <%- @getBlock("meta").toHTML() %>
   <meta charset="utf-8">
   <meta name="author" content="<%= @conf.name %>">
-  <meta name="description" content="<%= @conf.description %>">
+  <meta name="description" content="<%= @document.title %> - <%= @document.subtitle if @document.subtitle %>">
   <meta name="viewport" content="width=device-width">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   
