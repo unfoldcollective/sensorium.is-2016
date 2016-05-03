@@ -25,6 +25,7 @@ module.exports =
         "/styles/instant-style.css"
         "/styles/ui-hover-effects.css"
         "/styles/ui-buttons.css"
+        "/styles/jquery-image-gallery.css"
         "/styles/schedule.css"
         "/styles/news.css"
         "/styles/speakers.css"

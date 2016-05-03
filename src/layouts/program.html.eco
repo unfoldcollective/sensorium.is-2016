@@ -15,6 +15,11 @@
   <%-@partial('head-facebook.html')%>
   <%-@partial('head-favicons.html.eco')%>
 
+  <% if @document.usesImageGallery: %>
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/south-street/jquery-ui.css" id="theme">
+    <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+  <% end %>
+
   <!-- Styles -->
   <%- @getBlock('styles').add(@site.styles).toHTML() %>
 
@@ -33,7 +38,11 @@
     <div class="content" id="content">
       <div class="container">
         <div class="row mt mb">
-          <div class="col-lg-8 col-lg-offset-2">
+          
+          <% if !@document.fullWidth: %>
+            <div class="col-lg-8 col-lg-offset-2">
+          <% end %>
+
             <%- @content %>
             <% if @document.twitter: %>
               <p><i class="fa fa-twitter"></i> <a href="https://twitter.com/<%= @document.twitter %>" target="_blank"><%= @document.twitter %></a></p>
@@ -45,7 +54,9 @@
             <br>
             <%-@partial('button-tickets.html')%>
 
-          </div>
+          <% if !@document.fullWidth: %>
+            </div>
+          <% end %>
 
         </div><!--/row -->
       </div><!--/container -->
@@ -58,6 +69,13 @@
   <%- @getBlock('scripts').add(@site.scripts).toHTML() %>
   <!-- Google Analytics -->
   <%-@partial('googleanalytics.html.eco')%>
+  
+  <% if @document.usesImageGallery: %>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="/vendor/jquery.image-gallery.min.js"></script>
+  <% end %>
 
 </body>
 </html>
