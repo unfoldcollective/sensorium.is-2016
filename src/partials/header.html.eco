@@ -32,7 +32,7 @@
 
 				<% if @showLogotype: %>
 					<br><br><br>
-					<img class="svg" src="/images/sensorium2016-logo-white.svg" alt="Sensorium 2016">
+					<img class="svg" src="/images/sensorium-logo-white.svg" alt="Sensorium">
 					<br><br>
 				<% else: %>
 					<h1><%=@title if @title%></h1>

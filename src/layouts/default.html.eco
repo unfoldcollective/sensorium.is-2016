@@ -22,7 +22,7 @@
 <body class="bg-gradient">
   <div class="layout-default global">
     <%-@partial('nav.html.eco', {showSections:true})%>
-    <%-@partial('header.html.eco', {image:@document.image, showLogotype:true, title:@document.title, subtitle:@document.subtitle, subsubtitle:@document.datum, showCallToAction:true})%>
+    <%-@partial('header.html.eco', {image:@document.image, showLogotype:true, title:@document.title, subtitle:@document.subtitle, showCallToAction:true})%>
 
     <!-- CONTENT -->
     <div id="content">
