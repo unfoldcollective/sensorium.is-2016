@@ -191,6 +191,8 @@ module.exports =
             {raw: 'date', format: 'MMMM Do YYYY', formatted: 'humanDate'}
             {raw: 'date', format: 'YYYY-MM-DD', formatted: 'computerDate'}
           ]
+        assets:
+          retainName: 'yes'
   collections:
     speakers: ->
       @getCollection("html").findAllLive({relativeDirPath: 'speakers'}, [{time:1}]).on "add", (model) ->

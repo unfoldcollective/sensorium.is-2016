@@ -16,7 +16,20 @@
   <%-@partial('head-favicons.html.eco')%>
 
   <!-- STYLES -->
-  <%- @getBlock('styles').add(@site.styles).toHTML() %>
+  <link  rel="stylesheet" href="/vendor/bootstrap-min.css" />
+  <link  rel="stylesheet" href="/vendor/font-awesome-min.css" />
+  <link  rel="stylesheet" href="<%- @asset('/styles/instant-style.css') %>" />
+  <link  rel="stylesheet" href="<%- @asset('/styles/ui-hover-effects.css') %>" />
+  <link  rel="stylesheet" href="<%- @asset('/styles/ui-buttons.css') %>" />
+  <link  rel="stylesheet" href="<%- @asset('/styles/jquery-image-gallery.css') %>" />
+  <link  rel="stylesheet" href="<%- @asset('/styles/schedule.css') %>" />
+  <link  rel="stylesheet" href="<%- @asset('/styles/news.css') %>" />
+  <link  rel="stylesheet" href="<%- @asset('/styles/speakers.css') %>" />
+  <link  rel="stylesheet" href="<%- @asset('/styles/sponsors.css') %>" />
+  <link  rel="stylesheet" href="<%- @asset('/styles/footer.css') %>" />
+  <link  rel="stylesheet" href="<%- @asset('/styles/header.css') %>" />
+  <link  rel="stylesheet" href="<%- @asset('/styles/layout-program.css') %>" />
+  <link  rel="stylesheet" href="<%- @asset('/styles/layout-speaker.css') %>" />
 
 </head>
 <body class="bg-gradient">
