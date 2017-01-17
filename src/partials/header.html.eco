@@ -22,7 +22,7 @@
 	addCSSRule('#headerwrap::before', 'background: url(<%= @image %>) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;');
 </script>
 
-<div id="headerwrap">
+<div id="headerwrap" class="<%= 'bg-gradient' if @year%>">
     <div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2 white">
@@ -34,6 +34,8 @@
 					<br><br><br>
 					<img class="svg" src="/images/sensorium-logo-white.svg" alt="Sensorium">
 					<br><br>
+				<% else if @showAnimatedLogotype: %>
+					<iframe src="/sensorium-logo-animated.html" frameborder="0"></iframe>
 				<% else: %>
 					<h1><%=@title if @title%></h1>
 				<% end %>
@@ -50,6 +52,7 @@
 				<% if @showCallToAction: %>
 					<%-@partial('button-tickets.html')%>
 				<% end %>
+				<br><br><br><br>
 			</div>
 		</div><!--/row -->
     </div> <!-- /container -->
