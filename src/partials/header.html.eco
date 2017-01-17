@@ -41,7 +41,8 @@
 				<h3><%=@subtitle if @subtitle%></h3>
 
 				<% if @subsubtitle: %>
-				<p><%=@subsubtitle %></p>
+				<h3><%=@subsubtitle %></h3>
+				<br>
 				<% else: %>
 				<br><br>
 				<% end %>

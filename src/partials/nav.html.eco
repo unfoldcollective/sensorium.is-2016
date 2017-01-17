@@ -23,11 +23,15 @@
     <% if @showSections: %>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <% for section in @sections : %>
-              <% if not section.notInNav: %>
-                <li class="nav-item">
-                  <a href="#<%= section.title %>" title="<%= @labels[section.title] %>" class="nav-link"><%= @labels[section.title] %></a>
-                </li>
+            <% if @document.year == 2017: %>
+              <li class="nav-item"><a href="/2016" title="2016" class="nav-link">2016</a></li>
+            <% else: %>
+              <% for section in @sections : %>
+                <% if not section.notInNav: %>
+                  <li class="nav-item">
+                    <a href="#<%= section.title %>" title="<%= @labels[section.title] %>" class="nav-link"><%= @labels[section.title] %></a>
+                  </li>
+                <% end %>
               <% end %>
             <% end %>
           </ul>

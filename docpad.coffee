@@ -55,6 +55,39 @@ module.exports =
       sponsors: 'Sponsors'
       partners: 'Partners'
       contact: 'Contact'
+    sections2017: [
+      # {
+      #   title: 'news'
+      #   label: 'News'
+      # }
+      # {
+      #   title: 'speakers'
+      #   label: 'Artists'
+      # }
+      {
+        title: 'about'
+        label: 'About'
+        multilang: true
+      }      
+      # {
+      #   title: 'program'
+      #   label: 'Program'
+      # }
+      # {
+      #   title: 'location'
+      #   label: 'Locations'
+      # }
+      # {
+      #   title: 'sponsors'
+      #   label: 'Sponsors'
+      #   notInNav: true
+      # }
+      # {
+      #   title: 'partners'
+      #   label: 'Partners'
+      #   notInNav: true
+      # }
+    ]
     sections: [
       {
         title: 'news'
