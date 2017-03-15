@@ -16,7 +16,7 @@
   <%-@partial('head-favicons.html.eco')%>
 
   <!-- STYLES -->
-  <link  rel="stylesheet" href="/vendor/bootstrap-min.css" />
+  <!-- <link  rel="stylesheet" href="/vendor/bootstrap-min.css" />
   <link  rel="stylesheet" href="/vendor/font-awesome-min.css" />
   <link  rel="stylesheet" href="<%- @asset('/styles/instant-style.css') %>" />
   <link  rel="stylesheet" href="<%- @asset('/styles/ui-hover-effects.css') %>" />
@@ -29,7 +29,9 @@
   <link  rel="stylesheet" href="<%- @asset('/styles/footer.css') %>" />
   <link  rel="stylesheet" href="<%- @asset('/styles/header.css') %>" />
   <link  rel="stylesheet" href="<%- @asset('/styles/layout-program.css') %>" />
-  <link  rel="stylesheet" href="<%- @asset('/styles/layout-speaker.css') %>" />
+  <link  rel="stylesheet" href="<%- @asset('/styles/layout-speaker.css') %>" /> -->
+  <!-- Styles -->
+  <%- @getBlock('styles').add(@site.styles).toHTML() %>
 
 </head>
 <body class="bg-gradient">
