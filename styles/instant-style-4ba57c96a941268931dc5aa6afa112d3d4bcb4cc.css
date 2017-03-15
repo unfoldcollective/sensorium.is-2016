@@ -1,0 +1,376 @@
+/*
+ * Based on:
+ * Author: Carlos Alvarez
+ * URL: http://Alvarez.is
+ */
+
+
+/* ==========================================================================
+   Base Styles, Bootstrap Modifications & Fonts Import
+   ========================================================================== */
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+::-moz-selection {
+    background: #f2c2c9;
+    color: #a4003a;
+    text-shadow: none;
+}
+
+::selection {
+    background: #16a085;
+    color: #a4003a;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #0096AC;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.centered {
+	text-align: center;
+}
+
+.centeredblock {
+	margin: 0 auto !important;
+}
+
+.mt {
+	margin-top: 80px;
+}
+
+.mb {
+	margin-bottom: 80px;
+}
+
+/* ==========================================================================
+   General styles
+   ========================================================================== */
+
+.bg-gradient {
+	/*https://color.adobe.com/create/color-wheel/?base=2&rule=Analogous&selected=4&name=My%20Color%20Theme&mode=rgb&rgbvalues=0.9947712418300654,0.7951651794758344,0.5985973909076422,0.8982352941176471,0.6315190125322595,0.5313118279341073,0.9882352941176471,0.6516859409305555,0.6339591588966488,0.8982352941176471,0.45839163698328816,0.7193236875612449,0.9223873894245979,0.624122012823701,0.9947712418300654&swatchOrder=0,1,2,3,4*/
+	background-color: #FCDBD5;
+    background: -moz-linear-gradient(300deg, #FED097 0%, #FEAFBF 100%) center center fixed no-repeat; /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #FED097), color-stop(100%, #FEAFBF)) center center fixed no-repeat; /* safari4+,chrome */
+    background: -webkit-linear-gradient(300deg, #FED097 0%, #FEAFBF 100%) center center fixed no-repeat; /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(300deg, #FED097 0%, #FEAFBF 100%) center center fixed no-repeat; /* opera 11.10+ */
+    background: -ms-linear-gradient(300deg, #FED097 0%, #FEAFBF 100%) center center fixed no-repeat; /* ie10+ */
+    background: linear-gradient(150deg, #FED097 0%, #FEAFBF 100%) center center fixed no-repeat; /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FED097', endColorstr='#FEAFBF',GradientType=0 ); /* ie6-9 */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+body div.global {
+	width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+    /*color: #4a4a4a;*/
+}
+
+a {
+	color: #0096AC; // greenish blue
+}
+
+a.link-active {
+	border-bottom: 2px solid;
+}
+
+section {
+	padding: 1em;
+	text-align: center;
+}
+
+.bg-light{
+	background: rgba(255,255,255,0.5);
+}
+
+.section-title {
+	margin-bottom: 30px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a.buttonlink {
+	text-decoration: none;
+}
+
+.intro {
+	font-size: 120%;
+}
+
+.intro-big, {
+	font-size: 135%;
+}
+
+/* ==========================================================================
+   Nav Bar
+   ========================================================================== */
+
+.navbar-brand {
+	font-weight: 700;
+	/* make sure the section links still fit next to logo img + text */
+	margin-right: -50px;
+}
+
+.navbar-brand svg, .navbar-brand img {
+	height: 100%;
+	margin-top: -3px;
+	margin-right: 10px;
+}
+
+.navbar-default .navbar-brand {
+	color: #0096AC;
+}
+
+.navbar-default {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #0096AC;
+	background-color: transparent;
+	border-bottom: 2px solid #0096AC;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #0096AC;
+}
+
+.navbar-lang {
+	margin-left: 30px !important; 
+	font-weight: 200;
+	font-size: 14px;
+}
+
+.navbar-lang a:hover, .navbar-lang a:focus {
+	text-decoration: none;
+	border-bottom: 2px solid;
+}
+
+.navbar-lang:hover .ui-nohover{
+	color: #0096AC;
+}
+
+@media only screen and (max-width : 992px) {
+	.navbar-default .navbar-nav > li > a {
+		margin: 0 0px;
+		padding: 15px 10px;
+	}
+}
+
+/* ==========================================================================
+   Wrap Sections
+   ========================================================================== */
+
+#headerwrap {
+	margin-top: -70px;
+	padding-top: 160px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 650px;
+	width: 100%;
+	
+	/*
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    */
+	
+	display: block;
+    position: relative;
+}
+
+/* semi transparent background image*/
+/* background dynamically inserted in instant-header template */
+#headerwrap::before {
+	/* provide default fall back image that will be overridden*/
+	background: url(/images/back.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	content: "";
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+
+	opacity: 0.8;
+  	z-index: -1;   
+}
+
+/*black background*/
+#headerwrap::after {
+	content: "";
+	background: black;
+
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+		
+  	z-index: -2;   
+}
+
+#headerwrap * {
+	color: #ffffff;
+}
+
+#headerwrap h1 {
+	padding-top: 10px;
+	padding-bottom: 20px;
+	letter-spacing: 4px;
+	font-size: 80px;
+	font-weight: bold;
+}
+
+#headerwrap h4 {
+	font-weight: 400;
+}
+
+@media only screen and (max-width : 992px) {
+	#headerwrap h1 {
+		letter-spacing: 2px;
+		font-size: 50px;
+	}
+}
+
+#speakers ul {
+	/*margin-left: -40px;*/
+}
+
+#social {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #f2f2f2;
+}
+
+#social i {
+	font-size: 40px;
+	color: #4a4a4a
+}
+
+#social i:hover {
+	color: #0096AC
+}
+
+#workwrap {	
+	background: url(/images/work.jpg) no-repeat center top;
+	margin-top: -70px;
+	padding-top: 250px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 650px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#workwrap h1 {
+	color:#ffffff;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	letter-spacing: 4px;
+	font-size: 80px;
+	font-weight: bold;
+}
+
+#workwrap h4 {
+	font-weight: 400;
+	color: #ffffff
+}
+
+#aboutwrap {	
+	background: url(/images/about.jpg) no-repeat center top;
+	margin-top: -70px;
+	padding-top: 250px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 550px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* About section */
+.toggletext {
+	display:none;
+}
+
+blockquote {
+  /*background: #f9f9f9;*/
+  /*border-left: 10px solid #ccc;*/
+  border-left: none;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+
+  font-style: italic;
+}
+
+blockquote:before {
+  /*color: #ccc;*/
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+}
+
+/* Gallery */
+.gallery {
+	margin-top: 30px;
+}
+
+.gallery img:hover {
+	opacity: 0.4;
+}

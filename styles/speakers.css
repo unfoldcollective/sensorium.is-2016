@@ -1,0 +1,6 @@
+ul.speakers-list {
+  padding: 0;
+}
+ul.speakers-list li {
+  display: inline-block;
+}
